@@ -3,13 +3,91 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<!--Andati a capo sono sempre blocco-->
+
 <body>
-    <h1>mondo</h1>
+    <!--ol/ul per avere velocemente la lista scrivere li*n (dove n è un numero)-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguaggio di marcatura semantica</dd>
+    </dl>
+    <!--adress comunica solamente il tipo di dati all'interno-->
+    <adress>Qui vengo indicate informazioni di carattere anagrafico
+        (contatti, indirizzi, riferimenti, ecc.)</adress>
+    <blockquote cite="https://www.wikipedia.org"> Questa è una citazione con relativo riferimento </blockquote>
+    <p> Questo è un <strong> concetto molto importante anche a livello semantico per il motore di ricerca</strong> ma
+        posso evidenziare per scopi estetici <b> questo
+            testo</b>. Inoltre posso engatizzare <em> questa parola</em> o darle solo una <i>connotazione visiva</i>
+        secondo i dettami dichiarati nel <del>2015</del> <ins>2020</ins> dal W3C.</p>
+
+    <p>Questo è un paragrafo inserito in un tag <abbr title="Hyper Text Markup Language">HTML</abbr> inserito con il
+        codice <code>&lt;P&gt;</code> e spiega alcuni concetti in una o più frasi. Un'altra frase è aggiunta al
+        paragrafo <mark>corrente</mark> secondo il motto <q>la semantica prima di tutto</q> tratto dal libro <cite>HTML
+            for All</cite>.</p>
+
+    <p>Lorem
+    <pre>ipsum </pre> <!--Il comando <pre> manda a capo l'argomento e la frase successiva-->
+    <pre>dolor sit amet </pre> consectetur adipisicing elit. <kbd>Recusandae doloribus</kbd> officiis ipsum enim
+    quibusdam placeat voluptatum distinctio illum ad iusto? <samp>Nobis veniam voluptatum,</samp> recusandae dolores
+    numquam a itaque velit vero?</p>
+
+    <p>Parlando di equazioni potrei spiegare come <var>a</var> sia uguale a 4 ed elevare al quadrato a<sup>2</sup>.
+        Parlando di chimica potrei scrivere la sigla H<sub>2</sub>O.</p>
+
+    <p>Posso esprimere un concetto in un paragrafo. <br> Posso mantenermi nello stesso paragrafo andado però a capo.</p>
+    <hr> <!--Letteralmente una linea di separazione-->
+    <p>Posso separare diverse aree con una riga di separazione.</p>
+
+    <img src="nomefoto.jpg" alt="Descrizione della foto" width="500" height="250">
+    <!--src=percorso file; alt=testo alternativo per leggere l'immagine; width=larghezza pixel; heigth=altezza pixel-->
+    <!--Sconsigliato mettere l'altezza e la larghezza insieme-->
+
+    <img src="logo.jpg"> Immagine su stesso livello
+    <img scr="assets/immage/foto1.jpg"> Immagine su differente livello
+    <img scr="http://www.sito.it/img/sole.jpg"> Immagine esterna
+
+    <figure>
+        <img src="fotomia.jpg" alt="Panoramica della costa" width="500" height="250">
+        <figurecaption>Foto 1: La costa ripresa dall'alto</figurecaption>
+    </figure>
+
+    <figure>
+        <blockquote cite="https://www.sito.com"> Una frase citata non è una frase copiata</blockquote>
+        <figcaption>Frasi celebri - pag. 4</figcaption>
+    </figure>
+    <a href="https://google.com" title="motore di ricerca" target="_blank" rel="nofollow" style="color:aquamarine">Vai
+        alla pagina dedicata</a>
+    <a href="#correlati" title="guarda gli altri articoli"> Articoli correlati</a>
+    <p>Testo vario presente fra i 2 elementi</p>
+    <a id="correlati"></a>
+    <ul>
+        <li><a href="link-uno.html">Link 1</a></li>
+        <li><a href="link-uno.html">Link 2</li>
+        <li><a href="link-uno.html">Link 3</li>
+    </ul>
+    <ul>
+        <li><a href="tel: 0123456789">Chiamaci</a></li>
+        <li><a href="mailto:mail@esempio.it">Scrivici</a></li>
+        <li><a href="https://wa.me/0123456789?text=ciao"> Scrivici su whats </a></li>
+        <li><a href="https://i.ibb.co/ZSpNcF2/Whats-App-Image-2020-05-18-at-18-21-43.jpg" download> Scarica </a></li>
+    </ul>
+
+    <ul>
+        <li><a href="#sezione1"> Sezione 1</a></li>
+        <li></li>
+    </ul>
+
+
+    <section id="sezione1"></section>
+
+    <a href="#">Torna su</a>
 </body>
+
 </html>
