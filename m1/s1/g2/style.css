@@ -14,7 +14,14 @@ th {
     padding: 8px;
 }
 
-#form {}
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0e6e6;
+}
+.form {}
 
 input,
 textarea {
@@ -23,7 +30,6 @@ textarea {
 }
 
 .button {
-    position: absolute;
     background-color: rgb(4, 4, 131);
     color: blanchedalmond;
     border: none;
