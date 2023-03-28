@@ -55,3 +55,7 @@ textarea {
 .button:active {
     background-color: rgb(201, 22, 22);
 }
+
+.movedi{
+    display: flex;
+}

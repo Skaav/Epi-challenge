@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile">
-    
+    <link rel="stylesheet" href="style.css">
     <title>Sviluppo di una pagina web - Blog Epicode</title>
 </head>
 
@@ -16,7 +16,7 @@
     <header>
         <div class="myDiv">
             <img src="start/assets/img/logo.svg">
-            <h1 style="color: rgb(218, 136, 136);">Epicode - Il blog dei developers</h1>
+            <figcaption style="color: rgb(218, 136, 136);" w>Epicode - Il blog dei developers</figcaption>
         </div>
         <nav>
             <ul class="ul">
@@ -26,8 +26,9 @@
             </ul>
         </nav>
     </header>
+    <div class="movedi">
     <main>
-        <h2>Come creare un template per i post</h2>
+        <h1>Come creare un template per i post</h1>
         <h4>di Mario Rossi / pubblicato il 25-10-2020</h4>
         <p> La prima cosa da fare è suddividere in blocchi logoci la pagina, identificando le parti comuni da applicare
             a tutte le pagine </p>
@@ -84,24 +85,18 @@
                 </tr>
             </tbody>
         </table>
-        <p>Un test di validazione potrà essere fatto tramite il <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" tilte="Tool Online"
-                target="_blank"><i>tool online</i></a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo
+        <p>Un test di validazione potrà essere fatto tramite il <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
+                tilte="Tool Online" target="_blank"><i>tool online</i></a> dedicato allo scopo. Una volta ottimizzato il
+            tutto, avremo
             raggiunto il
-            nostro obiettivo ed essere stati dei veri developers come loro:<br> <iframe width="250" height="150"
-                src="https://www.youtube.com/embed/P8GdS8bdgK8"
-                title="I migliori VIDEO di CUCCIOLI di GATTI che giocano 😹" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>.
+            nostro obiettivo ed essere stati dei veri developers come loro:<br>
         </p>
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/P8GdS8bdgK8"
+            title="I migliori VIDEO di CUCCIOLI di GATTI che giocano 😹" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>.
     </main>
-    <side>
-        <h4>Vuoi rimanere aggiornato su altre novità del blog? Inscriviti alla nostra newsletter:</h4>
-        <form method="POST" autocomplete="on" onsubmit="alert('Iscritto!')">
-            <div class="form">
-                <input type="email" placeholder="Inserisci l'email" />
-            </div><br>
-            <button type="submit" class="button">Iscriviti!</button>
-        </form><br>
+    <aside>
         <h4>Articoli correlati</h4>
         <article>Validare il codice HTML<br>
             Categoria: develop<br>
@@ -112,11 +107,20 @@
         <article>Meno Kb nella pagina<br>
             Categoria: ottimizzazione<br>
             Data: 30-9-2020</article>
-    </side>
+        <h4>Vuoi rimanere aggiornato su altre novità del blog? Inscriviti alla nostra newsletter:</h4>
+        <form method="POST" autocomplete="on" onsubmit="alert('Iscritto!')">
+            <div class="form">
+                <input type="email" placeholder="Inserisci l'email" />
+            </div><br>
+            <button type="submit" class="button">Iscriviti!</button>
+        </form>
+    </aside>
+    </div>
     <footer id="footer">Blog Epicode &copy 2021<br>
-    Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233. <br>
-    info@epicode.school <a href="mailto:info@epicode.school">Email</a>
- </footer>
+        Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.
+        <br>
+        info@epicode.school <a href="mailto:info@epicode.school">Email</a>
+    </footer>
 </body>
 
 </html>
