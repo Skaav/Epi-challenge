@@ -1,2 +1,2 @@
 # Epicode challenge 
-Main repository https://github.com/Skaav/Epi-challenge.git
+Main repository https://github.com/Skaav/fs0223-Paolo-Scavino

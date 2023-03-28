@@ -5,25 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sviluppo di una pagina web - Blog Epicode</title>
-    <style>
-        table {
-            border-collapse: collapse
-        }
-
-        td,
-        th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-    </style>
 </head>
 
 <body>
     <main>
-        <div>
-            <img>
-            <h1>Epicode - Il blog dei developers</h1>
+        <div class="myDiv">
+            <img src="start/assets/img/logo.svg">
+            <h1 style="color: rgb(218, 136, 136);">Epicode - Il blog dei developers</h1>
         </div>
         <nav>
             <a href="#">Home</a> <br>
@@ -51,42 +41,55 @@
             </li>
         </ul>
         <table>
-            <caption>Diffusione dei CSS</caption>
-            <tr>
-                <th>Anno</th>
-                <th>% di utilizzo</th>
-                <th>Supporto browser</th>
-            </tr>
-            <tr>
-                <th>2000</th>
-                <th>20%</th>
-                <th>17%</th>
-            </tr>
-            <tr>
-                <th>2002</th>
-                <th>35%</th>
-                <th>22%</th>
-            </tr>
-            <tr>
-                <th>2004</th>
-                <th>45%</th>
-                <th>42%</th>
-            </tr>
-            <tr>
-                <th>2008</th>
-                <th>80%</th>
-                <th>51%</th>
-            </tr>
-            <tr>
-                <th>2012</th>
-                <th>100%</th>
-                <th>76%</th>
-            </tr>
+            <caption style="color: rgb(6, 6, 117); background-color: bisque;"><b>Diffusione dei CSS</b></caption>
+            <thead>
+                <tr style="background-color: aqua;">
+                    <th>Anno</th>
+                    <th>% di utilizzo</th>
+                    <th>Supporto browsers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2000</td>
+                    <td>20%</td>
+                    <td>17%</td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>35%</td>
+                    <td>22%</td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>45%</td>
+                    <td>42%</td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>80%</td>
+                    <td>51%</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>100%</td>
+                    <td>76%</td>
+                </tr>
+            </tbody>
         </table>
         Un test di validazione potrà essere fatto tramite il tool online <a href="#" tilte="Tool Online"
-            target="_blank">-LINK ESTERNO-</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il
-        nostro obiettivo ed essere stati dei veri developers come loro: <a href="#" title="link youtube" target="_blank">-LINK</a>
-        <form></form>
+            target="_blank"><i>-LINK ESTERNO-</i></a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo
+        raggiunto il
+        nostro obiettivo ed essere stati dei veri developers come loro: <a
+            href="https://www.youtube.com/watch?v=P8GdS8bdgK8" title="link youtube" target="_blank"><i>-INSERIRE VIDEO
+                YOUTUBE-</i></a>.
+        <h4>Vuoi rimanere aggiornato su altre novità del blog? Inscriviti alla nostra newsletter:</h4>
+        <form method="POST" autocomplete="on" onsubmit="alert('Iscritto!')">
+            <div id="form">
+                <input type="email" placeholder="Inserisci l'email" />
+            </div><br>
+            <button type="submit" class="button">Iscriviti!</button>
+        </form>
     </main>
     <footer></footer>
 </body>
