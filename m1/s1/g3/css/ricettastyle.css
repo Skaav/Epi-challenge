@@ -3,6 +3,9 @@
     text-align: center;
 }
 
+img{
+    max-width:100%
+}
 .margine{
     width: 700px;
     margin: 0 auto;
