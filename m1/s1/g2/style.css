@@ -1,5 +1,5 @@
 .myDiv {
-    border: 5px outset red;
+    border-top: 5px outset rgb(211, 231, 29);
     background-color: rgb(228, 235, 238);
     text-align: center;
 }
@@ -19,7 +19,7 @@ th {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f0e6e6;
+    background-color: #c42020;
 }
 .form {}
 
