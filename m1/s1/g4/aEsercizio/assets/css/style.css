@@ -4,7 +4,7 @@ body {
     background-image: url(../img/sfondo.png);
     background-size: cover;
     background-attachment: fixed;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 h1,
@@ -17,21 +17,25 @@ h6 {
 }
 
 h1 {
-    font-size: larger;
+    font-size: 1.5rem;
 }
 
-#margin{
-    margin: 10px;
-}
-.center{
+.center {
     text-align: center;
 }
+
 /* HEADER */
 #header {
-    margin: 20px;
+    margin: 15px;
     background: rgb(9, 50, 121);
     background: linear-gradient(90deg, rgba(9, 50, 121, 1) 31%, rgba(8, 71, 132, 1) 45%);
     text-align: center;
+}
+
+/*immagine*/
+
+img {
+    width: 100%;
 }
 
 #img {
@@ -43,6 +47,7 @@ h1 {
 #style {
     color: white;
     padding: 15px;
+    font-size: 1.1rem;
 }
 
 #ul {
@@ -57,69 +62,115 @@ h1 {
 
 /* MAIN */
 #main {
-    margin: 20px;
+    margin: 15px;
     background-color: rgb(255, 252, 252);
     padding: 15px;
 }
-#color{
+
+#color {
     color: grey;
     padding: 10px;
 }
-.span{
+
+.span {
     color: rgb(128, 59, 192);
 }
 
-
-.padding{
-    padding:10px;
+.tag {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(216, 214, 214);
+    border-radius: 5px;
+    border: 1px solid rgb(114, 112, 112);
 }
-.padding-left{
+
+.padding {
+    padding: 10px;
+}
+
+.padding-left {
     padding-left: 50px;
 }
 
-.link2{
-    color:rgb(42, 106, 179);
+.link2 {
+    color: rgb(42, 106, 179);
 }
-.margincentrato{    
+
+.margincentrato {
     margin-left: auto;
     margin-right: auto;
-
-}
-table {
-    border-collapse: collapse;
 }
 
-table, th, td {
-    border: 1px solid rgb(255, 255, 255);
-    text-align: center;
-}
-#caption{
+caption {
     font-weight: bold;
     font-style: italic;
 }
-td {
-    border-bottom: 1px solid #ffffff;
-    border-bottom;: 1px solid background-color: rgba(51,102,204,255);
+
+table {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
 }
-th{
-    height: 50px;
-    background-color: rgba(51,102,204,255);
-    border-bottom: 1px solid #ffffff;
-    text-align: left;
+
+table th {
+    background-color: #006b88;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
 }
+
+tbody {
+    border-bottom: #006b88 1px solid;
+}
+
+table td {
+    text-align: center;
+}
+
 tr:nth-child(even) {
     background-color: #f2f2f2
 }
-.padding-moreleft{
-    border-radius: 15%;
-    margin-left: 80px;
+
+/*form*/
+aside {
+    width: 100%;
 }
 
-/* ELEMENTI NEL MAIN - ARTICLE */
+.box {
+    margin-top: 15px;
+    background-color: rgba(221, 221, 222, 255);
+    padding: 10px;
+    text-align: left;
 
-/* TABELLE */
+}
 
-/* FORM */
+.box h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+fieldset {
+    text-align: left;
+    padding: 10px;
+}
+
+.box button {
+    background-color: #3d6dd7;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box input {
+    border: none;
+    border-bottom: 1px dashed black;
+}
+
+/*article*/
+article h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 
 /* ELEMENTI NELL' ASIDE */
 
