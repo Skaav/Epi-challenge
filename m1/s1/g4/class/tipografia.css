@@ -1,0 +1,25 @@
+/*definire variabili*/
+:root{
+    --main-color: #970000;
+}
+
+/*tipografia*/
+/*da domani si deve implementare il foglio reset e specificare tutte le caratteristiche del caso*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: var(--main-color)
+}

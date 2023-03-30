@@ -1,0 +1,14 @@
+/*tipografia*/
+
+body {
+    font-family: 'Noto Serif', serif;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}

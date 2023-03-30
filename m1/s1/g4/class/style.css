@@ -1,0 +1,155 @@
+/*
+posso selezionare per attributo facendo così
+input [ type="checkbox]{peso = 1+10
+    width: 100px;
+    higjt: 100px;
+}
+*/
+
+/*
+#check{
+    width: 100px;
+    height: 100px;
+}
+*/
+/* riga 14
+#menu{
+    list-style: none;
+    height: 0px;
+    overflow: hidden;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked + #menu{
+    height: 200px;
+}
+
+#menu li:not(:first-child) a{
+    color: red
+}
+*/
+.quadrato {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#q2 {
+    overflow: auto;
+    /*usare auto al posto di scroll per far scomparire le barre autmaticamente*/
+}
+
+#q3 {
+    background-color: red;
+    max-width: 600px;
+    /*esistono anche max e min per la height*/
+    height: 50px;
+}
+
+#q4{
+    padding: 15px;
+    /*il padding si somma all'elemento di partenza per evitare
+    bisogna usare box-sizing: border-box;*/
+    box-sizing: border-box;
+}
+
+/* a tutti gli elementi della pagina (*{})
+*{
+    box-sizig: border-box;
+}
+*/
+
+#q5{
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: grey;
+    border: 10px outset #999;
+}
+#q5:active{
+    background-color:#5c5c5c;
+    border: 10px inset #999;
+}
+
+#q6{
+    border-radius: 100%;
+    /* al 100% te lo rende completamente rotondo
+    si possono anche solo indicare gli angoli*/
+    border-top-left-radius: 60%;
+    /*Quello in alto a sinistra solo al 60%*/
+    border: 20px solid #000;
+    border-top: none;
+    /*margin= spaziatura per separare l'elemento dai
+    bordi della pagina*/
+    margin-left: 100px; 
+    /*Si possono applicare margini negativi -100px*/
+    /*
+    margin: 10px; su tutti i lati
+    margin: 0 50px; 0 => top, bottom / 50 px left, right
+    margin: 0 50px 0 50px;
+            top-right-bottom-left
+    */
+    /*Sull'asse verticale non si possono usare le % perché
+    rimane fondamentalmente infinito*/
+}
+/*le forme di margin funzionano anche con padding*/
+.full-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+}
+
+
+.rettangolo{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+#g1{
+    overflow: hidden;
+}
+#q1 img{
+    width: 100%;
+    margin-left: ;
+    margin-top: ;
+}
+/*ricordarsi di creare una cartella img per il percorso url*/
+#g2{
+    background-image: url(../), url(../), url(../);
+    background-size: 100px, 50px, 30px;
+                    /*x    y*/
+    /*se lascio spazio si ripetono per riempirsi*/
+    background-repeat: no-repeat, repeat-x, no-repeat;
+                    /*repeat-x*/
+    background-position: top, bottom;    
+}
+
+#g3{
+    background-image: url(../),;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#g4{
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+}
+
+#g5{
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-size: contain;
+    width: 100%;
+    height: 600px;
+}
+
+#g6{
+    background-image: linear-gradient(salmon, purple);
+}
