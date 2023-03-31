@@ -33,24 +33,27 @@ header div{
     text-align: center;
     padding: 40px;
 }
+.padding {
+    
+}
 /*MAIN*/
-main article section:first-child {
+#primissima {
     background-image:url(../images/banner.jpg);
     background-size: cover;
     padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 40px;
 }
-main article section h1 {
+#titolone {
     margin-bottom: 20px;
 }
-main article section p {
+#finalmente {
     margin-bottom: 40px;
 }
 #partiamo{
     background-color: #f04c2f;
     border-radius: 4px;
-    margin-left: 100px;
-    margin-right: 100px;
     padding: 10px;
     color: white;
     text-decoration: none;
@@ -116,13 +119,13 @@ footer{
     color: #c8e7f0;
     background-color: #25a3c3;
     padding-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 footer a{
     color:#c8e7f0;
 }
 footer h2 {
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 hr{
     color: white;
