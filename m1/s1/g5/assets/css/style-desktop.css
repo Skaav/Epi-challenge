@@ -41,6 +41,9 @@ header div{
     padding: 40px;
 }
 /*MAIN*/
+.bottom {
+    margin-bottom: 150px;
+}
 #primissima {
     background-image:url(../images/banner.jpg);
     background-size: cover;
@@ -98,21 +101,21 @@ header div{
 }
 /* ASIDE */
 .box {
+    width: 500px;
     border: 1px solid #dee1e3;
-    padding-bottom: 30px;
-    margin-bottom: 29px;
+    margin: 15px;
 }
 .box h3{
     padding-bottom: 5px;
 }
 .asideimg { 
-    width: 400px;
+    width: 100%;
     height: 350px;
-    object-fit: cover;
 }
 .space {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 150px;
 }
 
 /* FOOTER */
