@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+
+
+        var a;
+        console.log(a); //undefined
+
+        //esempio di hoisting su variabile
+        console.log(b); //viene sollevata la variabile, ma non il suo valore
+        var b = 0;
+        console.log(b);//0
+
+        //riassegnamento di basse significa elimina tutto quello che ci sta dentro
+
+        b = 1; //possotrasformare i numeri in parola, oggetto
+        console.log(b);
+
+        /**
+         * operatori matematici
+         * 
+         *  *(asterisco) => moltiplicazione
+         *  / => diviso
+         *  + => somma
+         *  - => sottrazione
+         */
+
+         // concatenamento / somma
+
+         var n = 5;
+         var t = 6;
+         console.log(n+t); //11
+         var risultato = n + t; //con la + si sommano i numeri ma cambia se le variabili non sono numeri
+         console.log( risultato);
+
+         var saluto = 'Ciao';
+         var nome = 'Mario';
+         console.log(saluto + ' ' + nome); // il ' ' serve per lo spazio
+
+        // conversione di numeri in stringhe
+         var anni=30;
+         console.log(nome+ ' ha '+anni+' anni');
+
+         //conversione di stringa '4' in numero
+         console.log('4' *2); //8
+         console.log('4a' *2); //Nan che non è un errore ma un tipo di dato, risultato da un'operazione matematica fatta con dei dati non matematici
+         console.log('4'+'2'); //42 conversione stringa in numero
+
+         //avviene un "casting" ossia una conversione 
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
