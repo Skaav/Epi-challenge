@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <script>
 
         var variabile = 5;
@@ -26,6 +28,41 @@
         js è un linguaggio a tipizzazione debole
         */
 
+        //le parole chiave sono le blu e fanno parte del linguaggio
+        var string = "Hello World!";
+        var string = 'Hello World!';
+        var number = 5.1;
+        /* i boolean non avanno tra le "" o le '' perché altrimenti 
+        significa che deve prendere la stringa */
+        var boolean = true;
+        var array = [];
+        /* si tratta di oggetto quando il valore è assegnato ad una
+         variabile*/
+        var object = {};
+
+        /* TYPEOF restituisce una stringa che descrive il tipo 
+        di dado del valore esaminato*/
+        console.log(typeof {})
+
+
+        // naming ed utilizzo
+        // una variabile non può iniziare con un numero
+        var 1ciao
+
+        // simboli accettati sono il $ e il _
+        var $prova1;
+        var _prova1;
+
+        /*la variabile deve avere un nome che chiarisce cosa ci sta 
+        dentro o comunque una indicazione*/
+
+        var nomeVariabile; //convenzione, e metodo che dovremmo utilizzare
+
+        var nome_variabile; //no
+        var nomeVariabile; //sì (anche per il nome delle funzioni/classi di JS)
+        
+        
     </script>
 </body>
+
 </html>
