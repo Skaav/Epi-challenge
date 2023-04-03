@@ -24,5 +24,5 @@ if (n > 10) {
     console.log('inferiore');
 }
 document.getElementById("terzo").innerHTML = n > 10;
-document.getElementById("quarto").innerHTML = n == 10; "È uguale"
+document.getElementById("quarto").innerHTML = n == 10;
 document.getElementById("quinto").innerHTML = n < 10;
