@@ -10,13 +10,29 @@ REGOLE
 /* ESERCIZIO 1
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
+/*
+-Dato 'Stringa' indica sia il singolo carattere che la sequenza finita di caratteri. Possono essere modificate e manipolate tramite metodi.
+Si dichiarano scrivendoli in mezzo agli apostrofi 'così', o alle  virgolette "così".
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+-Dato Numerico, indica un numero. In JS non c'è distinzione fra intero e decimale, che viene scritto con il punto e non con la virgola. 
+I dati numerici non richiedono '' o "".
+
+-Dato booleano, indica un booleano ossia due soli valori, true o false. Serve a definire se un controllo risulta vero o falso.
+
+-Null è una parola chiave che indica l'assenza intenzionale di un oggetto ossia nessun valore ed è diverso da zero. 
+Se rimandato da una logica booleana indica false.
+
+-Undefined indica che una variabile non è stata definita o non ha un valore assegnato.
+
+-Object un contenitore di proprietà (dati) e di metodi (funzionalità), che servono a formare una struttura logica.
+
+-Array è una variabile che contiene più dati al suo interno dello stesso valore.
+*/
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
-var name = "Paolo";
+let name = "Paolo";
 console.log(name);
 
 /* ESERCIZIO 3
@@ -38,9 +54,9 @@ let x = 12;
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
-var name = "Scavino"
+name = "Scavino";
 console.log(name);
-const impossibileRiassegnare = 28;
+const IMPOSSIBILE_RIASSEGNARE = 28;
 //var impossibileRiassegnare = 17;
 /*se si toglie il commento '//' da davanti a var lanciando js risulterà 
 un errore "UncaughtSyntaxError: Identifier 'impossibileRiassegnare' has already been declared"
@@ -58,7 +74,7 @@ console.log(4 - x);
  Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
-var name1 = "john";
-var name2 = "John";
+let name1 = "john";
+let name2 = "John";
 console.log(name1 == name2);
 console.log(name1.toLowerCase === name2.toLowerCase);
