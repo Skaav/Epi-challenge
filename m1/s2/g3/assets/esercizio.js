@@ -321,7 +321,7 @@ se inserisco un numero divero a 5 compare not equal  */
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per
-   rimuovere Sl'ultimo elemento della proprietà "skills".
+   rimuovere l'ultimo elemento della proprietà "skills".
 */
 {
   const me = {
