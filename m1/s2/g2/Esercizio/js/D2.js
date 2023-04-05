@@ -33,7 +33,7 @@ Se rimandato da una logica booleana indica false.
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 let name = "Paolo";
-console.log(name);
+console.log(nazme);
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
