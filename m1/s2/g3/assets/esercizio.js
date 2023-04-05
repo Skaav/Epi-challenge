@@ -365,3 +365,7 @@ il 100. Però poi Miche ci picchia.
   prova.push(100);
   console.log(prova);
 }
+{
+  let prova = [];
+  prova.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+}
