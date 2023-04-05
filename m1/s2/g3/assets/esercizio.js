@@ -2,19 +2,19 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 {
-  let a1 = 5;
-  let a2 = 9;
+  let a = 5;
+  let b = 9;
 
   if (a1 > a2) {
     console.log("Il più grande è : ");
-    console.log(a1);
+    console.log(a);
     console.log("Il più piccolo è : ");
-    console.log(a2);
+    console.log(b);
   } else {
     console.log("Il più grande è : ");
-    console.log(a2);
+    console.log(b);
     console.log("Il più piccolo è : ");
-    console.log(a1);
+    console.log(a);
   }
 }
 
