@@ -18,7 +18,7 @@
   }
 }
 
-/* SCRIVI QUI LA TUA RISPOSTA 
+/*
 Il più grande è : 
 9
 Il più piccolo è : 
@@ -38,12 +38,10 @@ Il più piccolo è :
   } else {
     console.log("are equal");
   }
-
 }
-/* SCRIVI QUI LA TUA RISPOSTA 
+/* 
 se inserisco un numero uguale a 5 compare are equal
 se inserisco un numero divero a 5 compare not equal  */
-
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero 
@@ -60,7 +58,6 @@ se inserisco un numero divero a 5 compare not equal  */
   } else {
     console.log("Il numero  non è divisibile per 5");
   }
-
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -80,17 +77,16 @@ se inserisco un numero divero a 5 compare not equal  */
     console.log("C'è almeno un numero uguale a otto");
   }
 
-  if ((a1 + a2) == 8) {
-    console.log("La somma dei due numeri è uguale a 8")
+  if (a1 + a2 == 8) {
+    console.log("La somma dei due numeri è uguale a 8");
   }
 
   // la sottrazione non è commutativa
-  if ((a1 - a2) == 8) {
-    console.log("La differenza dei due numeri è uguale a 8")
-  } else if ((a2 - a1) == 8) {
-    console.log("La differenza dei due numeri è uguale a 8")
+  if (a1 - a2 == 8) {
+    console.log("La differenza dei due numeri è uguale a 8");
+  } else if (a2 - a1 == 8) {
+    console.log("La differenza dei due numeri è uguale a 8");
   }
-
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -104,15 +100,13 @@ se inserisco un numero divero a 5 compare not equal  */
     addebitato all'utente per il checkout.
 */
 
-
 {
   let totalShoppingCart = 31;
 
   if (totalShoppingCart > 50) {
     console.log("Checkout" + totalShoppingCart);
-
   } else {
-    console.log("La tua spesa è di" + '' + totalShoppingCart);
+    console.log("La tua spesa è di" + "" + totalShoppingCart);
     console.log("Il costo di spedizione è di 10");
     totalShoppingCart += 10;
     console.log("Checkout" + totalShoppingCart);
@@ -134,12 +128,10 @@ se inserisco un numero divero a 5 compare not equal  */
   // variabile sconto che calcola il Black Friday
   let sconto = totalShoppingCart * 0.8;
 
-
   if (sconto > 50) {
     console.log("Checkout" + sconto);
-
   } else {
-    console.log("La tua spesa è di" + '' + sconto);
+    console.log("La tua spesa è di" + "" + sconto);
     console.log("Il costo di spedizione è di 10");
     sconto += 10;
     console.log("Checkout" + sconto);
@@ -153,37 +145,87 @@ se inserisco un numero divero a 5 compare not equal  */
   Alla fine mostra il risultato in console.
 */
 {
-  let a1 = 12;
-  let a2 = 19;
-  let a3 = 27;
+  console.log("--------------------------");
+  let array = [45, 20, 34];
+  array.sort(function (a, b) {
+    return a - b;
+  });
+  array.reverse();
+  console.log(array);
+  // se scrivo array.sort(function (a, b) {return b - a});
+  console.log("--------------------------");
+}
+{
+  let a = 2;
+  let b = 4;
+  let c = 8;
+
+  if (a > b && a > c) {
+    if (b > c) {
+      console.log(`La sequenza sarà ${a} ${b} ${c}`);
+    } else {
+      console.log(`La sequenza sarà ${a} ${c} ${b}`);
+    }
+  } else if (b > a && b > c) {
+    if (a > c) {
+      console.log(`La sequenza sarà ${b} ${a} ${c}`);
+    } else {
+      console.log(`La sequenza sarà ${b} ${c} ${a}`);
+    }
+  } else if (c > a && c > b) {
+    if (a > b) {
+      console.log(`La sequenza sarà ${c} ${a} ${b}`);
+    } else {
+      console.log(`La sequenza sarà ${c} ${b} ${a}`);
+    }
+  }
+}
+{
+  let a = 30;
+  let b = 19;
+  let c = 27;
+
+  if (a > b && b > c) {
+    console.log(a, b, c);
+  } else if (a > c && c > b) {
+    console.log(a, c, b);
+  } else if (b > a && a > c) {
+    console.log(b, a, c);
+  } else if (b > c && c > a) {
+    console.log(b, c, a);
+  } else if (c > a && a > b) {
+    console.log(c, a, b);
+  } else if (c > b && b > a) {
+    console.log(c, b, a);
+  }
+}
+{
+  console.log("--------------------------");
+  let a = 12;
+  let b = 19;
+  let c = 27;
   let max = 0;
   let min = 0;
   let med = 0;
-  if (a1 > a2) {
-    max = a1;
-    min = a2;
+  //trovo il massimo e il minimo fra a e b
+  if (a > b) {
+    max = a;
+    min = b;
   } else {
-    max = a2;
-    min = a1;
+    max = b;
+    min = a;
   }
-
-
-  if (a3 > max) {
+  if (c > max) {
     med = max;
-    max = a3;
-  } else if (a3 < min) {
+    max = c;
+  } else if (c < min) {
     med = min;
-    min = a3;
+    min = c;
   } else {
-    med = a3;
+    med = c;
   }
-
-  console.log(max);
-  console.log(med);
-  console.log(min);
-
+  console.log(max, med, min);
 }
-
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero
@@ -192,15 +234,13 @@ se inserisco un numero divero a 5 compare not equal  */
 
 {
   let a1 = 12;
-  let a2 = 'sasso';
+  let a2 = "sasso";
   let a3 = true;
 
-  console.log(typeof (a1));
-  console.log(typeof (a2));
-  console.log(typeof (a3));
+  console.log(typeof a1);
+  console.log(typeof a2);
+  console.log(typeof a3);
 }
-
-
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari 
@@ -236,33 +276,32 @@ se inserisco un numero divero a 5 compare not equal  */
       console.log("Uguale a 10 o maggiore");
     }
 */
-{let val = 7
+{
+  let val = 7;
   if (val < 5) {
-      console.log("Meno di 5");
-    } else if (val < 10) {
-      console.log("Meno di 10");
-    } else  {
-      console.log("Uguale a 10 o maggiore");
-    }
+    console.log("Meno di 5");
+  } else if (val < 10) {
+    console.log("Meno di 10");
+  } else {
+    console.log("Uguale a 10 o maggiore");
   }
-
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", 
   il cui valore sarà "Toronto".
 */
 {
-const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-}
+  const me = {
+    name: "John",
+    lastName: "Doe",
+    skills: ["javascript", "html", "css"],
+  };
 
-me.city='Toronto';
-//prototype viene usato per modificare i costruttori
-console.log(me);
+  me.city = "Toronto";
+  //prototype viene usato per modificare i costruttori
+  console.log(me);
 }
-
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per 
@@ -270,15 +309,15 @@ console.log(me);
 */
 {
   const me = {
-    name: 'John',
-    lastName: 'Doe',
-    skills: ['javascript', 'html', 'css'],
-  }
-  
+    name: "John",
+    lastName: "Doe",
+    skills: ["javascript", "html", "css"],
+  };
+
   delete me.lastName;
- 
+
   console.log(me);
-  }
+}
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per
@@ -286,33 +325,30 @@ console.log(me);
 */
 {
   const me = {
-    name: 'John',
-    lastName: 'Doe',
-    skills: ['javascript', 'html', 'css'],
-  }
-  
+    name: "John",
+    lastName: "Doe",
+    skills: ["javascript", "html", "css"],
+  };
   me.skills.pop();
- 
-  // me.skills.splice(1, 2); limit test
+  //me.skills.splice(1, 1); //limit test
   console.log(me);
-  }
-
+}
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo 
   successivamente con i numeri da 1 a 10.
 */
 {
-let arr = []
+  let arr = [];
 
-/*
-arr.push(1);
-console.log(arr);
-abbiamo provato il metodo push su un singolo elemento per poi andare ad applicarlo
-agli altri elementi dell'esercizio 
-*/
-arr.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-console.log(arr);
+  /*
+  arr.push(1);
+  console.log(arr);
+  abbiamo provato il metodo push su un singolo elemento per poi andare ad applicarlo
+  agli altri elementi dell'esercizio 
+  */
+  arr.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+  console.log(arr);
 }
 
 /* ESERCIZIO 15
@@ -320,20 +356,12 @@ console.log(arr);
   con il valore 100.
 */
 /* ovviamente potremmo sostituire l'ultimo elemento dell'array, ovvero il valore 10, con
-il 100. Però poi miche ci picchia.
+il 100. Però poi Miche ci picchia.
 */
 {
-  let prova = []
+  let prova = [];
   prova.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
   prova.pop();
   prova.push(100);
   console.log(prova);
 }
-
-
-
-
-
-
-  
-
