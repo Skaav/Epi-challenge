@@ -368,4 +368,6 @@ il 100. Però poi Miche ci picchia.
 {
   let prova = [];
   prova.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+  prova[9] = 100;
+  console.log(prova);
 }
