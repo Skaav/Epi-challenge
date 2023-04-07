@@ -108,6 +108,7 @@ h4 {
 
 .immaginine {
     background-size: cover;
+    background-position: center;
     height: 400px;
     width: 300px;
     border-radius: 15px;
@@ -140,6 +141,7 @@ h4 {
     background-size: cover;
     width: 100%;
     height: 500px;
+    margin-bottom: 10px;
 }
 
 #fourth {
