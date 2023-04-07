@@ -34,6 +34,12 @@ h4 {
     background-color: #222f3e;
 }
 
+#logo {
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
 .navigazione {
     background-color: #364757;
     padding-left: 10px;
@@ -45,6 +51,8 @@ h4 {
 .anav {
     color: white;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .anav:hover {
@@ -52,7 +60,7 @@ h4 {
     border-color: white;
 }
 
-#firstsection {
+#first {
     background-color: #d35b46;
     background-size: cover;
     padding: 10px;
@@ -89,7 +97,7 @@ h4 {
 
 .aline {
     display: inline;
-    font-size: bold;
+    font-weight: bold;
 }
 
 .flex {
@@ -98,40 +106,28 @@ h4 {
     margin-top: 20px;
 }
 
-#primo {
-    background-image: url(../img/img_1.jpg);
+.immaginine {
     background-size: cover;
     height: 400px;
     width: 300px;
     border-radius: 15px;
     box-shadow: 1px 1px 10px black;
+}
+
+#primo {
+    background-image: url(../img/img_1.jpg);
 }
 
 #secondo {
     background-image: url(../img/img_2.jpg);
-    background-size: cover;
-    height: 400px;
-    width: 300px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 10px black;
 }
 
 #terzo {
     background-image: url(../img/img_3.jpg);
-    background-size: cover;
-    height: 400px;
-    width: 300px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 10px black;
 }
 
 #quarto {
     background-image: url(../img/img_4.jpg);
-    background-size: cover;
-    height: 400px;
-    width: 300px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 10px black;
 }
 
 .azzurro {
@@ -140,18 +136,18 @@ h4 {
     font-weight: bold;
 }
 
-#fourth {
-    background-image: url(../img/img_9.png);
+.immaginone {
     background-size: cover;
     width: 100%;
     height: 500px;
 }
 
+#fourth {
+    background-image: url(../img/img_9.png);
+}
+
 #fifth {
     background-image: url(../img/img_10.png);
-    background-size: cover;
-    width: 100%;
-    height: 500px;
 }
 
 footer {
