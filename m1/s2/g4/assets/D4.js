@@ -190,13 +190,13 @@ switch (true) {
   case (cont < 500):
     console.log("Ship is under loaded");
     break;
-  case (cont = 500):
+  case (cont == 500):
     console.log("Ship is half loaded");
     break;
-  case (cont > 700):
+  case (cont > 700 && cont < 900):
     console.log("Warning: Load is over 700");
     break;
-  case (cont > 900):
+  case (cont > 900 && cont < 1000):
     console.log("Critical Load: Over 900");
     break;
   case (cont > 1000):
@@ -217,14 +217,17 @@ console.log(starWarsCharacters);
 
 /* EXTRA ESERCIZIO 9
 
-Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome"
+Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array
+"characters" le stringhe corrispondenti a personaggi con lo stesso nome"
 Usa uno più for loop per raggiungere il risultato
 
 (tip: cerca un metodo degli array per rimuovere un elemento)
 
-Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
+Una volta fatto crea un conosle.log per controllare la proprietà length di "characters"
+prima e dopo l'operazione
 */
 
 /* EXTRA ESERCIZIO 10
-Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
+Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters"
+e ne stampi in console le proprietà in modo discorsivo
 */
