@@ -1,0 +1,169 @@
+body {
+    background-color: rgb(237, 229, 229);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    line-height: 1;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+.header {
+    background-color: #222f3e;
+}
+
+.navigazione {
+    background-color: #364757;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.anav {
+    color: white;
+    text-decoration: none;
+}
+
+.anav:hover {
+    border: 1px solid;
+    border-color: white;
+}
+
+#firstsection {
+    background-color: #d35b46;
+    background-size: cover;
+    padding: 10px;
+
+}
+
+#button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#second {
+    background-image: url(../img/bg-image.png);
+    background-size: cover;
+    padding: 40px;
+}
+
+.margintop {
+    margin-top: 30px;
+}
+
+#whitetitle {
+    color: white;
+    font-weight: bold;
+}
+
+#third {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.aline {
+    display: inline;
+    font-size: bold;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#primo {
+    background-image: url(../img/img_1.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#secondo {
+    background-image: url(../img/img_2.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#terzo {
+    background-image: url(../img/img_3.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black;
+}
+
+#quarto {
+    background-image: url(../img/img_4.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.azzurro {
+    color: rgb(42, 126, 139);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#fourth {
+    background-image: url(../img/img_9.png);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+#fifth {
+    background-image: url(../img/img_10.png);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+footer {
+    text-align: center;
+}
+
+#tornasu {
+    color: white;
+    font-size: bold;
+}
+
+#footer {
+    background-color: #222f3e;
+    padding: 50px;
+}

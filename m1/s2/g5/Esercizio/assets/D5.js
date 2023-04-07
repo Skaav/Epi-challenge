@@ -212,5 +212,5 @@ for (p = 0; p < charactersArray.length; p++)
       break;
     default:
       console.log(charactersArray[p]);
-
+      break;
   }
