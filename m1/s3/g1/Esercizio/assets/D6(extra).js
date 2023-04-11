@@ -27,7 +27,7 @@
  Crea una funzione chiamata "maxShoppingCart" che riceve l'array "shoppingCart" e ritorna l'oggetto più costoso in esso contenuto.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* potremmo usare read us per trovare il prezzo più grande */
 
 /* EXTRA 5
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
@@ -44,7 +44,8 @@
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 7
-Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
+Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. 
+La funzione salta automaticamente i valori non numerici nell'array.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -56,17 +57,22 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 9
- Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", e torna un valore booleano.
- La funzione deve ritornare true se "emailContent" non contiene le parole "SPAM" o "SCAM".
+ Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", 
+ e torna un valore booleano. La funzione deve ritornare true se "emailContent" non contiene le parole "SPAM" o "SCAM".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
 /* EXTRA 10
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
 */
+let now = new Date();
+let nextMonth = new Date();
+nextMonth.setMonth(nextMonth.getMonth() + 1);
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (now < nextMonth) {
+
+}
+/* il mese 0 è Gennaio  */
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come paremetri due numeri interi, "x" e "y".
