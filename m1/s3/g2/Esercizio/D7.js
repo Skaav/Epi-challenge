@@ -241,11 +241,29 @@ movies.map(function (p) {
   }
 }
 )
+/*
+movies.filter(function(movie){
+  return movie.Year >= 2000
+})
+*/
 console.log(filmNuovo);
 /* ESERCIZIO 14
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+let id = 'tt4154796';
+let search = movies.filter(function (c) {
+  return c.imdbID == id;
+})
 
+console.log(search);
 /* ESERCIZIO 15
-  Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
+  Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film 
+  contenuti nell'array fornito.
 */
+
+function sAnni() {
+  return movies.reduce(function (p, c) {
+    return p + Number(c.Year);
+  }, 0)
+}
+console.log(sAnni());
