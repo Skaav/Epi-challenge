@@ -234,11 +234,13 @@ console.log(film);
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
-let filmNuovo = movies.reduce(function (p) {
-  if (p.Year >== '2000') {
-    return g;
+let filmNuovo = [];
+movies.map(function (p) {
+  if (p.Year >= '2000') {
+    filmNuovo.push(p);
   }
-})
+}
+)
 console.log(filmNuovo);
 /* ESERCIZIO 14
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
