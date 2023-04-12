@@ -1,37 +1,99 @@
 /* ESERCIZIO 1
-  Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
-  prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
+  Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando 
+  solamente i primi 2 caratteri della prima e gli ultimi 3 della seconda. 
+  Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
+{
+  function concat(v1, v2) {
+    let minuscolo = v1.slice(0, 2) + v2.slice(-3);
+    let maiuscolo = minuscolo.toUpperCase();
+    return maiuscolo;
+  }
+  console.log(concat("paolo", "scavino"));
+}
 
 /* ESERCIZIO 2
-  Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
+  Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un 
+  valore random compreso tra 0 e 100 (incluso).
 */
+{
+  let numeriRandomici = [];
+  function giveMeRandom(n) {
+    for (g = 0; g < n; g++)
+      numeriRandomici.push(Math.floor(Math.random() * 100) + 1);
+    return numeriRandomici;
+  }
+  console.log(giveMeRandom(10));
 
-/* ESERCIZIO 3
-  Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
-*/
+  /* ESERCIZIO 3
+    Scrivi una funzione per ricavare solamente i valori PARI da un array 
+    composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
+  */
+  let soloPari = numeriRandomici.filter(n => n % 2 == 0)
+  console.log(soloPari);
 
-/* ESERCIZIO 4
-  Scrivi una funzione per sommare i numeri contenuti in un array
-*/
+  /* ESERCIZIO 4
+    Scrivi una funzione per sommare i numeri contenuti in un array
+  */
+  let somma = 0;
+  numeriRandomici.forEach(s => somma += s);
+  console.log(somma);
 
-/* ESERCIZIO 5
+  let sum = 0;
+  function sNumeri(numeriRandomici) {
+    for (i = 0; i < numeriRandomici.length; i++)
+      sum += numeriRandomici[i];
+    return sum;
+  }
+  sNumeri(numeriRandomici)
+  console.log(sum);
+
+  /* ESERCIZIO 5
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
-*/
+  */
+  let sommaNumeri = numeriRandomici.reduce((h, k) => h + k)
+  console.log(sommaNumeri);
 
-/* ESERCIZIO 6
-  Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
-*/
+  /* ESERCIZIO 6
+    Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, 
+    ritorni un secondo array con tutti i valori del precedente incrementati di n
+  */
+  let n = 2;
+  let increMento = numeriRandomici.map(x => x + n);
+  console.log(increMento);
+}
 
 /* ESERCIZIO 8
-  Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
+  Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente 
+  le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+{
+  let arrayStringhe = ['muffin', 'pizza', 'patatine',];
+
+  let arrayForEach = [];
+  arrayStringhe.forEach(i => arrayForEach.push(i.length));
+  console.log(arrayForEach);
+
+  let arrayMap = arrayStringhe.map(x => x.length);
+  console.log(arrayMap);
+}
 
 /* ESERCIZIO 9
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
-
+{
+  let numeriDispari = [];
+  function dispari() {
+    for (i = 0; i < 100; i++) {
+      if (i % 2 != 0) {
+        numeriDispari.push(i)
+      }
+    }
+    return numeriDispari;
+  }
+  console.log(dispari());
+}
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
@@ -146,6 +208,7 @@ const movies = [
 /* ESERCIZIO 10
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+
 
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
