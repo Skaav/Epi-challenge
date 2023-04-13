@@ -79,83 +79,100 @@
     /* ESERCIZIO 1
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
-
-    const changeTitle = function () {
-
-
+    let tit = document.querySelector('h1')
+    const changeTitle = function (stringa) {
+      return tit.textContent = stringa
     }
+    changeTitle('Pippo');
 
     /* ESERCIZIO 2
        Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
     */
 
     const addClassToTitle = function () {
-
-
+      return tit.classList.add('myHeading');
     }
+    addClassToTitle();
 
     /* ESERCIZIO 3
        Scrivi una funzione per che cambi il testo dei p figli di un div
       */
-
-    const changePcontent = function () {
-
-
+    /* let tutteP = document.querySelectorAll('p');
+    const changePcontent = function (dichiarato) {
+      tutteP.forEach(el => el.textContent = dichiarato)
     }
+    changePcontent('Questo nuovo testo spacca'); */
+    let p2 = document.querySelectorAll('div p');
+    const changePcontent = function (dichiarato) {
+      return p2.forEach(el => el.textContent = dichiarato)
+    }
+    changePcontent('Questo nuovo testo spacca!');
 
     /* ESERCIZIO 4
-       Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
+       Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) 
+       con il valore https://www.google.com
       */
-
-    const changeUrls = function () {
-
-
+    let a = document.querySelectorAll('a:not(footer a)')
+    const changeUrls = function (lik) {
+      return a.forEach(pir => pir.href = lik)
     }
+    changeUrls('https://www.google.com');
 
     /* ESERCIZIO 5
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
-
-    const addToTheSecond = function () {
-
-
+    const addToTheSecond = function (lista) {
+      let li = document.createElement('li')
+      let ul2 = document.getElementById('secondList')
+      ul2.appendChild(li);
+      li.textContent = lista;
     }
+    addToTheSecond('Aggiunta!');
 
     /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un secondo paragrafo al primo div
     */
 
-    const addParagraph = function () {
 
 
+    const addParagraph = function (news) {
+      let div = document.querySelector('div')
+      let p = document.createElement('p')
+      p.textContent = news
+      return div.append(p)
     }
+    addParagraph('Lorem ipsum')
+
 
     /* ESERCIZIO 7
        Scrivi una funzione che faccia scomparire la prima lista non ordinata
     */
-
+    let primaLista = document.getElementById('firstList')
     const hideFirstUl = function () {
-
-
+      return primaLista.textContent = ""
     }
+    hideFirstUl();
 
     /* ESERCIZIO 8 
        Scrivi una funzione che renda verde il background di ogni lista non ordinata
       */
 
     const paintItGreen = function () {
-
-
+      let verde = document.querySelectorAll('li')
+      return verde.forEach(el => el.style.backgroundColor = 'green')
     }
+    paintItGreen();
 
     /* ESERCIZIO 9
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
-
     const makeItClickable = function () {
-
-
-    }
+      let sus = tit.textContent;
+      tit.textContent = sus.slice(0, -1)
+    };
+    h1.addEventListener('click', function () {
+      return makeItClickable();
+    });
 
     /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
@@ -177,7 +194,8 @@
     }
 
     /* ESERCIZIO 12
-       Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
+       Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari 
+       come parametri
     */
 
     const addRow = function () {
@@ -204,7 +222,8 @@
     }
 
     /* EXTRA ESERCIZIO 16
-      Crea una funzione che elimini le vocali da ogni elemento testuale della pagina (puoi aiutarti con i nuovi metodi degli array di ES6)
+      Crea una funzione che elimini le vocali da ogni elemento testuale della pagina (puoi aiutarti con i nuovi 
+      metodi degli array di ES6)
     */
 
     const deleteVowels = function () {
