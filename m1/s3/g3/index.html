@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="test">Hello World!</div>
+    <div class="blocco">1</div>
+    <div class="blocco">2</div>
+    <div class="blocco">3</div>
+    <div class="blocco">4</div>
+
+    <script>
+
+        //funzioni classiche per selezionare elementi del dom
+        let test = document.getElementById("test");
+        console.log(test);
+        console.dir(test);
+        test.textContent = 'Ciao Mondo!';
+        test.style.backgroundColor = 'red';
+        //si può usare un log per stamparlo in console o salvare il dato in una variabile
+        /*
+        da solo non serve a niente ma è un metodo che accetta una stringa in ingresso e restituisce un dato. 
+        Cerca e ti permette di manipolare il dato
+        trovato
+        */
+
+        //malgrado sia un array i nuovi metodi non funzionano, poiché è vecchio
+        let blocchi = document.getElementsByClassName('blocco');
+        console.log(blocchi);
+
+        //blocchi[1].style.backgroundcolor = 'blue';
+        for (let element of blocchi) {
+            element.style.backgroundColor = 'blu';
+        }
+
+
+    </script>
+</body>
+
+</html>

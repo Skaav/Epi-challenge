@@ -1,0 +1,14 @@
+I DOM sono ulteriori diramazioni.
+Si lavora principalmente sulle Classi e il meno possibile sull'Id.
+Poiché l'Id è univoco.
+Selettori, sono tutti quei metodi che utilizziamo per fare DOM in una maniera diretta.
+Abbiamo due set di selettori in js.
+1. funzioni classiche per selezionare elementi del DOM
+
+
+
+
+
+
+
+2. funzioni nuove

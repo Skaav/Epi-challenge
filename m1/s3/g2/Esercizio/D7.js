@@ -235,7 +235,7 @@ console.log(film);
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 let filmNuovo = [];
-movies.map(function (p) {
+movies.filter(function (p) {
   if (p.Year >= '2000') {
     filmNuovo.push(p);
   }
@@ -250,7 +250,7 @@ console.log(filmNuovo);
 /* ESERCIZIO 14
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
-let id = 'tt4154796';
+let id = "tt4154796";
 let search = movies.filter(function (c) {
   return c.imdbID == id;
 })
