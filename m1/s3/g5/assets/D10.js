@@ -210,6 +210,7 @@ function isTodayMyBirthday(giorno, mese) {
 }
 isTodayMyBirthday(16, 12);
 // Arrays & Oggetti
+/* Questo array viene usato per gli esercizi. Non modificarlo. */
 const movies = [
   {
     Title: 'The Lord of the Rings: The Fellowship of the Ring',
@@ -328,7 +329,6 @@ const movies = [
 
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
-// se non dice necessariamente for loop possiamo usare tutto
 
 /* ESERCIZIO 11
   Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; 
@@ -508,14 +508,14 @@ function addList() {
   nuovaLista.textContent = 'Nuovo elemento';
   list.appendChild(nuovaLista);
 }
-addList();
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 function removeList() {
   document.querySelector('#myList').remove()
 }
-removeList();
+
 
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
@@ -523,10 +523,11 @@ removeList();
 function addClass() {
   let allTr = document.querySelectorAll('tr');
   for (let i of allTr) {
-    allTr.classList.add('test')
+    i.classList.add('test')
   }
 }
 addClass();
+
 
 
 // [EXTRA] JS Avanzato
@@ -543,6 +544,14 @@ addClass();
   ***
 
 */
+function halfTree(num) {
+  let sum = '';
+  for (let i = 0; i < num; i++) {
+    sum += '*';
+    console.log(sum);
+  }
+}
+halfTree(3);
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero 
@@ -556,11 +565,44 @@ addClass();
   *****
 
 */
+function tree(num) {
+  for (let i = 0; i < num; i++) {
+    let sum = '';
+    let spazio = ((num - 1) - i);
+    if (i == 0) {
+      sum += ''.repeat(spazio);
+    }
+    sum += ' '.repeat(spazio);
+    let zero = 2 * i + 1;
+    sum += '*'.repeat(zero);
+    console.log(sum);
+  }
+}
+tree(4);
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il 
   numero fornito è un numero primo.
 */
+/* il numero 1 non  è cosiderato numero primo quindi devo escluderlo
+https://www.youmath.it/lezioni/algebra-elementare/lezioni-di-algebra-e-aritmetica-per-scuole-medie/1770-numeri-primi.html#:~:text=1%20è%20un%20numero%20primo,un%20ragazzo%20di%20scuola%20media.
+*/
+function isPrime(number) {
+  if (number <= 1)
+    return false;
 
-/* Questo array viene usato per gli esercizi. Non modificarlo. */
+  if (number <= 3)
+    return true;
+
+  if (number % 2 == 0 || number % 3 == 0)
+    return false;
+
+  for (let i = 5; i * i <= number; i = i + 6) {
+    if (number % i == 0 || number % (i + 2) == 0)
+      return false;
+  }
+  return true;
+}
+console.log(isPrime(0));
+
 
