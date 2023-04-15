@@ -363,10 +363,10 @@ console.log(newestMovie());
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array
   "movies" fornito.
 */
-function nFilm() {
+function countMovies() {
   return movies.length;
 }
-console.log(nFilm());
+console.log(countMovies());
 
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita
@@ -400,12 +400,12 @@ console.log(onlyInLastMillennium());
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono
   stati prodotti i film contenuti nell'array "movies" fornito.
 */
-function sAnni() {
+function sumAllTheYears() {
   return movies.reduce(function (p, c) {
     return p + Number(c.Year);
   }, 0)
 }
-console.log(sAnni());
+console.log(sumAllTheYears());
 
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i
