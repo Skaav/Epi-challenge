@@ -79,21 +79,22 @@
     /* ESERCIZIO 1
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
-    let tit = document.querySelector('h1')
-    const changeTitle = function (stringa) {
-      return tit.textContent = stringa
+    {
+      let tit = document.querySelector('h1')
+      const changeTitle = function (stringa) {
+        return tit.textContent = stringa
+      }
+      changeTitle('Pippo e Paperino');
+
+      /* ESERCIZIO 2
+         Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
+      */
+
+      const addClassToTitle = function () {
+        return tit.classList.add('myHeading');
+      }
+      addClassToTitle();
     }
-    changeTitle('Pippo');
-
-    /* ESERCIZIO 2
-       Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
-    */
-
-    const addClassToTitle = function () {
-      return tit.classList.add('myHeading');
-    }
-    addClassToTitle();
-
     /* ESERCIZIO 3
        Scrivi una funzione per che cambi il testo dei p figli di un div
       */
@@ -166,14 +167,13 @@
     /* ESERCIZIO 9
        Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
       */
+    let h1Title = document.querySelector('h1');
     const makeItClickable = function () {
-      let sus = tit.textContent;
-      tit.textContent = sus.slice(0, -1)
+      let text = h1Title.textContent;
+      let h1NewTitle = text.slice(0, -1);
+      h1Title.textContent = h1NewTitle;
     };
-    h1.addEventListener('click', function () {
-      return makeItClickable();
-    });
-
+    h1Title.addEventListener('click', makeItClickable)
     /* ESERCIZIO 10
        Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
       */
