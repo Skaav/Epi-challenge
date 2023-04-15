@@ -34,13 +34,12 @@ let me = {
   surname: 'Scavino',
   age: 27,
 }
-console.log(me);
+
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà 
   "age" dall'oggetto precedentemente creato.
 */
 delete me.age;
-console.log(me);
 
 /* ESERCIZIO E
   Crea del codice per aggiungere programmaticamente all'oggetto 
@@ -80,12 +79,12 @@ console.log(dice());
 */
 function whoIsBigger(a, b) {
   if (a > b) {
-    return console.log(a)
+    return a;
   } else {
-    return console.log(b);
+    return b;
   }
 }
-whoIsBigger(10, 6);
+console.log(whoIsBigger(10, 6));
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e 
   ritorna un'array contenente ogni parola della stringa.
@@ -103,25 +102,25 @@ console.log(splitMe("I love coding"));
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, 
   altrimenti la deve ritornare senza l'ultimo.
 */
-function deleteOne(str, a) {
-  if (a === true) {
+function deleteOne(str, bool) {
+  if (bool) {
     return str.slice(1);
   } else {
     return str.slice(0, -1);
   }
 }
-console.log(deleteOne('Gianni e Pinotto', true));
+console.log(deleteOne('Gianni e Pinotto', false));
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e 
   la ritorna eliminando tutte le cifre numeriche.
 
-  Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
+  Es.: onlyLetters("I have 4 dogs") => ritorna "I have  dogs"
 */
 function onlyLetters(stringa) {
   return stringa.replace(/[0-9]/g, '');
 }
-console.log(onlyLetters('awddyaw67de3d'));
+console.log(onlyLetters('awd6dy78aw67de3d'));
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e 
@@ -151,6 +150,7 @@ function whatDayIsIt() {
   return giorni[weekDay];
 }
 console.log(whatDayIsIt());
+
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
   Deve invocare la precedente funzione dice() il numero di volte specificato nel parametro, 
@@ -166,16 +166,15 @@ console.log(whatDayIsIt());
   }
 */
 function rollTheDices(n) {
-  let sum = 0;
-  let values = [];
-  for (i = 0; i < n; i++) {
-    let tiroDado = dice();
-    sum += tiroDado;
-    values.push(tiroDado);
+  function ThreeDice() {
+    this.sum = null;
+    this.values = [];
   }
-  let threeDice = {
-    sum: sum,
-    values: values,
+  let threeDice = new ThreeDice();
+  for (i = 0; i < n; i++) {
+    let tiro = dice();
+    threeDice.sum += tiro;
+    threeDice.values.push(tiro);
   }
   return threeDice;
 }
@@ -185,30 +184,28 @@ console.log(rollTheDices(3));
   il numero di giorni trascorsi da tale data.
 */
 function howManyDays(data) {
-  let now = new Date().getTime();
-  let dif = now - new Date(data).getTime();
-  let days = Math.floor(dif / (1000 * 60 * 60 * 24));
+  let time = new Date().getTime() - new Date(data).getTime();
+  let days = Math.floor(time / (1000 * 60 * 60 * 24));
   return days;
 }
-let days = howManyDays('2023-04-10');
-console.log(days);
-
+console.log(howManyDays('1995-12-16'));
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo 
   compleanno, falso negli altri casi.
 */
 function isTodayMyBirthday(giorno, mese) {
-  let today = new Date();
-  let monthDay = today.getMonth() + 1;
-  let day = today.getDate();
-  if (day === giorno && monthDay === mese) {
-    return console.log(true);
+  let month = new Date().getMonth() + 1;
+  let day = new Date().getDate();
+  if (day === giorno && month === mese) {
+    return true;
   } else {
-    return console.log(false);
+    return false;
   }
 }
-isTodayMyBirthday(16, 12);
+console.log(isTodayMyBirthday(15, 04));
+console.log(isTodayMyBirthday(16, 12));
+
 // Arrays & Oggetti
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 const movies = [
@@ -351,14 +348,16 @@ console.log(deleteProp(oggetto, 'morte'));
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" 
   fornito.
 */
-let newestMovie = movies.reduce(function (p, g) {
-  if (p.Year < g.Year) {
-    return g;
-  } else {
-    return p;
-  }
-})
-console.log(newestMovie);
+function newestMovie() {
+  return movies.reduce(function (p, g) {
+    if (p.Year < g.Year) {
+      return g;
+    } else {
+      return p;
+    }
+  })
+}
+console.log(newestMovie());
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array
@@ -422,6 +421,7 @@ function searchByTitle(str) {
   return risultato;
 }
 console.log(searchByTitle('The'));
+
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un
   oggetto contenente due array: "match" e "unmatch".
@@ -429,10 +429,11 @@ console.log(searchByTitle('The'));
   fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 function searchAndDivide(str) {
-  let big = {
-    match: [],
-    unmatch: [],
-  }
+  function Big() {
+    this.match = []
+    this.unmatch = []
+  };
+  let big = new Big();
   movies.forEach((p) => {
     if (p.Title.includes(str)) {
       big.match.push(p.Title)
@@ -452,26 +453,26 @@ function removeIndex(num) {
   movies.splice(num, 1);
   return movies;
 }
-console.log(removeIndex(1));
+console.log(removeIndex(7));
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
+
+/*Se si vuole attivare la funzione bisogna evocarla all'esterno.
+*/
 
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 function isContainer() {
-  let conteier = document.querySelector('#container');
+  let container = document.querySelector('#container');
 }
-console.log(isContainer());
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
 function selectAllTd() {
   let td = document.querySelectorAll('td');
-  console.log(td);
 }
-selectAllTd();
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td>
@@ -485,7 +486,7 @@ function stampaTd() {
     console.log(contentTd);
   }
 }
-stampaTd();
+
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della
@@ -497,7 +498,6 @@ function backgroundColor() {
     allLinks[i].style.backgroundColor = "red";
   }
 }
-backgroundColor();
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
@@ -512,6 +512,14 @@ function addList() {
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
+/*Se si vuole svuotare li mantenendo l'ul*/
+function clearUl() {
+  let unorderedList = document.querySelector('#myList')
+  let liElements = unorderedList.querySelectorAll('li');
+  liElements.forEach(li => li.remove());
+}
+/*Se si vuole svuotare ul e li */
+clearUl();
 function removeList() {
   document.querySelector('#myList').remove()
 }
@@ -526,7 +534,6 @@ function addClass() {
     i.classList.add('test')
   }
 }
-addClass();
 
 
 
@@ -551,7 +558,7 @@ function halfTree(num) {
     console.log(sum);
   }
 }
-halfTree(3);
+halfTree(10);
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero 
@@ -578,7 +585,7 @@ function tree(num) {
     console.log(sum);
   }
 }
-tree(4);
+tree(10);
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il 
@@ -590,19 +597,12 @@ https://www.youmath.it/lezioni/algebra-elementare/lezioni-di-algebra-e-aritmetic
 function isPrime(number) {
   if (number <= 1)
     return false;
-
-  if (number <= 3)
-    return true;
-
-  if (number % 2 == 0 || number % 3 == 0)
-    return false;
-
-  for (let i = 5; i * i <= number; i = i + 6) {
-    if (number % i == 0 || number % (i + 2) == 0)
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i == 0)
       return false;
   }
   return true;
 }
-console.log(isPrime(0));
+console.log(isPrime(3));
 
 
