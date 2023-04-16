@@ -10,8 +10,7 @@ REGOLE
 // JS Basics
 
 /* ESERCIZIO A
-  Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i 
-  valori 10 e 20.
+  Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
 {
   let sum = 10 + 20;
@@ -19,15 +18,13 @@ REGOLE
 }
 
 /* ESERCIZIO B
-  Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 
-  (deve essere generato dinamicamente a ogni esecuzione).
+  Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
 let random = Math.floor(Math.random() * 21);
 console.log(random);
 
 /* ESERCIZIO C
-  Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti 
-  proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
+  Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 */
 let me = {
   name: 'Paolo',
@@ -36,29 +33,24 @@ let me = {
 }
 
 /* ESERCIZIO D
-  Crea del codice per rimuovere programmaticamente la proprietà 
-  "age" dall'oggetto precedentemente creato.
+  Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 */
 delete me.age;
 
 /* ESERCIZIO E
-  Crea del codice per aggiungere programmaticamente all'oggetto 
-  precedentemente creato un array chiamato "skills", contenente i linguaggi di 
-  programmazione che conosci.
+  Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
 me.skills = ['JavaScript', 'Java'];
 console.log(me);
 
 /* ESERCIZIO F
-  Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" 
-  contenuto nell'oggetto "me".
+  Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
 me.skills.push('PhP');
 console.log(me);
 
 /* ESERCIZIO G
-  Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento 
-  dall'array "skills" contenuto nell'oggetto "me".
+  Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
 me.skills.pop()
 console.log(me);
@@ -74,8 +66,7 @@ function dice() {
 console.log(dice());
 
 /* ESERCIZIO 2
-  Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e 
-  ritorna il maggiore dei due.
+  Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
 function whoIsBigger(a, b) {
   if (a > b) {
@@ -86,8 +77,7 @@ function whoIsBigger(a, b) {
 }
 console.log(whoIsBigger(10, 6));
 /* ESERCIZIO 3
-  Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e 
-  ritorna un'array contenente ogni parola della stringa.
+  Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
@@ -99,8 +89,7 @@ console.log(splitMe("I love coding"));
 
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
-  Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, 
-  altrimenti la deve ritornare senza l'ultimo.
+  Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
 function deleteOne(str, bool) {
   if (bool) {
@@ -112,8 +101,7 @@ function deleteOne(str, bool) {
 console.log(deleteOne('Gianni e Pinotto', false));
 
 /* ESERCIZIO 5
-  Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e 
-  la ritorna eliminando tutte le cifre numeriche.
+  Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have  dogs"
 */
@@ -123,8 +111,7 @@ function onlyLetters(stringa) {
 console.log(onlyLetters('awd6dy78aw67de3d'));
 
 /* ESERCIZIO 6
-  Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e 
-  ritorna true se la stringa è un valido indirizzo email.
+  Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 function isThisAnEmail(email) {
   let regexp = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
@@ -152,12 +139,8 @@ function whatDayIsIt() {
 console.log(whatDayIsIt());
 
 /* ESERCIZIO 8
-  Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
-  Deve invocare la precedente funzione dice() il numero di volte specificato nel parametro, 
-  e deve tornare un oggetto contenente una proprietà "sum":
-  il suo valore deve rappresentare il totale di tutti i valori estratti con le 
-  invocazioni di dice(). L'oggetto ritornato deve anche contenere una proprietà "values", 
-  contenente un array con tutti i valori estratti dalle invocazioni di dice().
+  Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro. Deve invocare la precedente funzione dice() il numero di volte specificato nel parametro, e deve tornare un oggetto contenente una proprietà "sum": il suo valore deve rappresentare il totale di tutti i valori estratti con le invocazioni di dice(). 
+  L'oggetto ritornato deve anche contenere una proprietà "values", contenente un array con tutti i valori estratti dalle invocazioni di dice().
 
   Example:
   rollTheDices(3) => ritorna {
@@ -180,8 +163,7 @@ function rollTheDices(n) {
 }
 console.log(rollTheDices(3));
 /* ESERCIZIO 9
-  Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna 
-  il numero di giorni trascorsi da tale data.
+  Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 function howManyDays(data) {
   let time = new Date().getTime() - new Date(data).getTime();
@@ -191,8 +173,7 @@ function howManyDays(data) {
 console.log(howManyDays('1995-12-16'));
 
 /* ESERCIZIO 10
-  Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo 
-  compleanno, falso negli altri casi.
+  Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 function isTodayMyBirthday(giorno, mese) {
   let month = new Date().getMonth() + 1;
@@ -328,9 +309,7 @@ const movies = [
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
 
 /* ESERCIZIO 11
-  Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; 
-  deve ritornare l'oggetto fornito dopo aver eliminato in esso la proprietà chiamata come la 
-  stringa passata come secondo parametro.
+  Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
 let oggetto = {
   nome: 'Francesco',
@@ -345,8 +324,7 @@ function deleteProp(obj, str) {
 console.log(deleteProp(oggetto, 'morte'));
 
 /* ESERCIZIO 12
-  Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" 
-  fornito.
+  Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
 function newestMovie() {
   return movies.reduce(function (p, g) {
@@ -360,8 +338,7 @@ function newestMovie() {
 console.log(newestMovie());
 
 /* ESERCIZIO 13
-  Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array
-  "movies" fornito.
+  Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
 function countMovies() {
   return movies.length;
@@ -369,8 +346,7 @@ function countMovies() {
 console.log(countMovies());
 
 /* ESERCIZIO 14
-  Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita
-  dei film contenuti nell'array "movies" fornito.
+  Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
 function onlyTheYears() {
   let annoUscita = [];
@@ -381,8 +357,7 @@ function onlyTheYears() {
 console.log(onlyTheYears());
 
 /* ESERCIZIO 15
-  Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel
-  millennio scorso contenuti nell'array "movies" fornito.
+  Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
 function onlyInLastMillennium() {
   let filmVecchi = [];
@@ -480,13 +455,12 @@ function selectAllTd() {
 */
 function stampaTd() {
   let allTd = document.querySelectorAll('td')
-  let b = [];
   for (let i of allTd) {
     let contentTd = i.textContent;
     console.log(contentTd);
   }
 }
-
+stampaTd();
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della
