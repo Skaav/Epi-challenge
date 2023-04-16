@@ -463,8 +463,7 @@ function stampaTd() {
 stampaTd();
 
 /* ESERCIZIO 23
-  Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della
-  pagina.
+  Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 function backgroundColor() {
   let allLinks = document.querySelectorAll('a');
@@ -514,8 +513,7 @@ function addClass() {
 // [EXTRA] JS Avanzato
 //aberelli stampati in console
 /* ESERCIZIO 27
-  Crea una funzione chiamata "halfTree" che riceve un numero come parametro e costruisce un mezzo 
-  albero di "*" (asterischi) dell'altezza fornita.
+  Crea una funzione chiamata "halfTree" che riceve un numero come parametro e costruisce un mezzo albero di "*" (asterischi) dell'altezza fornita.
 
   Esempio:
   halfTree(3)
@@ -535,8 +533,7 @@ function halfTree(num) {
 halfTree(10);
 
 /* ESERCIZIO 28
-  Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero 
-  di "*" (asterischi) dell'altezza fornita.
+  Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
   Esempio:
   tree(3)
@@ -562,8 +559,7 @@ function tree(num) {
 tree(10);
 
 /* ESERCIZIO 29
-  Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il 
-  numero fornito è un numero primo.
+  Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 /* il numero 1 non  è cosiderato numero primo quindi devo escluderlo
 https://www.youmath.it/lezioni/algebra-elementare/lezioni-di-algebra-e-aritmetica-per-scuole-medie/1770-numeri-primi.html#:~:text=1%20è%20un%20numero%20primo,un%20ragazzo%20di%20scuola%20media.
