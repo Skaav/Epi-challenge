@@ -43,8 +43,39 @@ hr {
   z-index: 100;
 }
 
+
 .icone {
-  border: ;
+  border: 2px solid white;
+  box-shadow: 5px 5px 5px #4b4848;
+  background-color: #e9eeefc5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px 0 0 10px;
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .fixed {
+    position: fixed;
+    z-index: 2;
+    right: 0px;
+    top: 0;
+  }
+
+  #icona1 {
+    top: 0px;
+    right: 0;
+    bottom: auto;
+  }
+
+  #icona2 {
+    top: 80px;
+    right: 0;
+    bottom: auto;
+  }
 }
 
 
