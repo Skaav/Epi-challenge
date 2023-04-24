@@ -27,12 +27,22 @@ hr {
   position: absolute;
 }
 
-#z1 {
+#block {
+  display: block;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.7em;
   z-index: 1;
 }
 
+#none {
+  display: none;
+}
+
 #z2 {
-  top: 105px;
+  top: 2.5rem;
   z-index: 0;
 }
 
@@ -61,7 +71,6 @@ hr {
   .fixed {
     position: fixed;
     z-index: 2;
-    right: 0px;
     top: 0;
   }
 
@@ -72,9 +81,11 @@ hr {
   }
 
   #icona2 {
-    top: 80px;
-    right: 0;
-    bottom: auto;
+    position: relative;
+    top: 625px;
+    bottom: 0;
+    z-index: 2;
+
   }
 }
 
@@ -188,7 +199,7 @@ section h2 {
   background-color: #a3a3a3;
   padding: 0px 1em;
   position: absolute;
-  bottom: 118px;
+  bottom: 115px;
   text-transform: uppercase;
 }
 
@@ -199,7 +210,7 @@ h1 {
   line-height: 1.2;
   font-weight: bold;
   letter-spacing: -0.03em;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.5em;
 }
 
 p,
@@ -232,6 +243,17 @@ h1+p {
 @media screen and (min-width: 500px) {
   h1 {
     font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  h1,
+  #block {
+    font-size: 3rem;
+  }
+
+  #z2 {
+    top: 2.9rem;
+    width: 425px;
   }
 
   p,
@@ -249,6 +271,26 @@ h1+p {
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 3.6rem;
+    margin-bottom: 0;
+  }
+
+  h1,
+  #block {
+    font-size: 3.6rem;
+  }
+
+  #z2 {
+    top: 3.5rem;
+    width: 545px;
+  }
+
+  section {
+    position: relative;
+  }
+
+  section h2 {
+    position: absolute;
+    bottom: 130px;
   }
 }
 
@@ -257,8 +299,32 @@ h1+p {
     line-height: 2;
   }
 
+  h1 {
+    display: inline;
+  }
+
   section {
     border-radius: 20px;
+    position: relative;
+  }
+
+  #z2 {
+    right: -10px;
+    top: 1.3rem;
+    width: 525px;
+  }
+
+  #template {
+    display: inline;
+  }
+
+  #template p {
+    display: inline;
+  }
+
+  section h2 {
+    position: absolute;
+    bottom: 150px;
   }
 }
 
