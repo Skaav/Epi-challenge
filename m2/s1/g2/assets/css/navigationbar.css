@@ -1,0 +1,40 @@
+/* .nav {
+    background-color: blueviolet;
+    padding: 50px;
+    border-radius: 4em;
+} */
+body {
+    font-family: sans-serif;
+    color: #711906;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fef7e2;
+    padding: 10px;
+    border-radius: 5em;
+}
+
+.il {
+    background-color: #ffdf7f;
+    padding: 10px;
+    border-radius: 3em;
+    font-size: 0.6rem;
+    margin: 10px;
+}
+
+.shop {
+    display: flex;
+    align-items: center;
+    background-color: #ffdf7f;
+    padding: 10px;
+    /* padding-bottom: 10px; */
+    border-radius: 5em;
+
+}
+
+#ape {
+    width: 50px;
+}
