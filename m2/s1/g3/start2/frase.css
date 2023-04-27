@@ -7,4 +7,88 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
+#testoAlternato {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    width: 480px;
+}
 
+.parole {
+    margin-left: 5px;
+}
+
+#rol1 {
+    animation: fade1 6s ease-in 0s infinite;
+}
+
+
+#rol2 {
+    animation: fade2 6s ease-in 2s infinite;
+}
+
+#rol3 {
+    animation: fade3 6s ease-in 4s infinite;
+}
+
+
+i {
+    position: absolute;
+    opacity: 0;
+    color: rgb(41, 146, 198);
+}
+
+@keyframes fade1 {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    50% {
+
+        transform: translatey(0);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes fade3 {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}

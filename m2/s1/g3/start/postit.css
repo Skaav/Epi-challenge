@@ -60,48 +60,43 @@ p {
 
 .animazione1 {
     rotate: -3deg;
-    animation: aniPost 3s linear 1 backwards;
+    animation: aniPost 1s linear 1 backwards;
 }
 
 
 .animazione2 {
     rotate: 5deg;
-    animation: aniPost 3s linear 1s 1 backwards;
+    animation: aniPost 1s linear 1s backwards;
 }
 
 .animazione3 {
     rotate: 3deg;
-    animation: aniPost 3s linear 2s 1 backwards;
+    animation: aniPost 1s linear 2s backwards;
 }
 
 .animazione4 {
     rotate: 10deg;
-    animation: aniPost 3s linear 3s 1 backwards;
+    animation: aniPost 1s linear 3s backwards;
 }
 
 .animazione5 {
     rotate: -3deg;
-    animation: aniPost 3s linear 4s 1 backwards;
+    animation: aniPost 1s linear 4s backwards;
 }
 
 .animazione6 {
     rotate: 3deg;
-    animation: aniPost 3s linear 5s 1 backwards;
+    animation: aniPost 1s linear 5s backwards;
 }
 
 .animazione7 {
     rotate: -3deg;
-    animation: aniPost 3s linear 6s 1 backwards;
+    animation: aniPost 1s linear 6s backwards;
 }
 
 .animazione8 {
     rotate: 5deg;
-    animation: aniPost 3s linear 7s 1 backwards;
-}
-
-
-.greens {
-    background-image: radial-gradient(circle at 60.9% 20.05%, #ffffc9 0, #fbffc9 10%, #eaffc7 20%, #dafcc5 30%, #caf0c2 40%, #bae2bd 50%, #acd4b7 60%, #a1c8b2 70%, #99bdad 80%, #92b3a8 90%, #8daca4 100%);
+    animation: aniPost 1s linear 7s backwards;
 }
 
 .yellow {
