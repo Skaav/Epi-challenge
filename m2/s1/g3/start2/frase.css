@@ -18,6 +18,9 @@
 
 .parole {
     margin-left: 5px;
+    position: absolute;
+    opacity: 0;
+    color: rgb(41, 146, 198);
 }
 
 #rol1 {
@@ -33,12 +36,6 @@
     animation: fade1 6s ease-in 4s infinite;
 }
 
-
-i {
-    position: absolute;
-    opacity: 0;
-    color: rgb(41, 146, 198);
-}
 
 @keyframes fade1 {
     0% {
