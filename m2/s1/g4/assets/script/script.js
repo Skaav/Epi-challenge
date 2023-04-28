@@ -19,7 +19,7 @@ function selectRandom(x) {
     return x[Math.floor(Math.random() * x.length)];
 }
 
-function lettereAnimate() {
+function animateLetters() {
     let switchTrue = selectRandom(Array.from(letters));
     if (switchTrue.classList.contains('letterM')) {
         switchTrue.classList.remove('letterM');
@@ -28,4 +28,4 @@ function lettereAnimate() {
     }
 };
 
-setInterval(lettereAnimate, 2);
+setInterval(animateLetters, 2);

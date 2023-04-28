@@ -335,7 +335,7 @@ footer div {
 /* SWITCH COLORE E ANIMAZIONE */
 
 .colorSwitch {
-    transition: 300ms ease-in;
+    transition: 300ms ease-out;
     background: white;
 }
 
