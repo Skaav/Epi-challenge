@@ -19,7 +19,6 @@ function selectRandom(x) {
     return x[Math.floor(Math.random() * x.length)];
 }
 
-// aggiungo classe per farle sparire
 function lettereAnimate() {
     let switchTrue = selectRandom(Array.from(letters));
     if (switchTrue.classList.contains('letterM')) {
@@ -28,5 +27,5 @@ function lettereAnimate() {
         switchTrue.classList.add('letterM');
     }
 };
-//attivo tutto
+
 setInterval(lettereAnimate, 2);

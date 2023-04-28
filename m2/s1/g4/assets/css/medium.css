@@ -341,12 +341,8 @@ footer div {
 
 .colorSwitch2 {
     transition: 300ms ease-in;
-    background: #1a8917;
+    background-color: #1a8917;
     border: none;
-    box-sizing: border-box;
-    padding: 7px;
-    border-radius: 40px;
-    color: white;
 }
 
 .letterM {
