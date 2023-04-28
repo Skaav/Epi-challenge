@@ -38,7 +38,7 @@ nav li a {
 
 .start {
     transition: 1s;
-    padding: 1rem;
+    padding: 8px;
     border-radius: 40px;
     background: rgba(25, 25, 25, 1);
 }
@@ -212,11 +212,22 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
+    margin-right: 1rem;
 }
 
 .autorIcon img {
     border-radius: 100%;
-    padding-right: 1rem;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.autorIcon p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#iconSquare {
+    border-radius: 5px;
 }
 
 .articleTitle {
@@ -278,12 +289,12 @@ header {
 }
 
 .stickAside {
-    width: 48%;
+    width: 25%;
     margin-right: 1rem;
 }
 
 aside {
-    padding-block: 1rem;
+    padding: 1rem;
     border-bottom: 0.1px solid rgb(220, 216, 216);
 }
 
@@ -309,7 +320,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
-    row-gap: 1rem;
 }
 
 footer div a {
@@ -334,7 +344,7 @@ footer div {
     background: #1a8917;
     border: none;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 7px;
     border-radius: 40px;
     color: white;
 }
@@ -342,4 +352,169 @@ footer div {
 .letterM {
     transition: 200ms ease-in;
     opacity: 1;
+}
+
+/*MOBILE */
+
+@media screen and (max-width: 552px) {
+    nav ul {
+        padding: 0px;
+    }
+
+    .start {
+        padding: 7px;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav ul li:last-child {
+        display: unset;
+    }
+
+    .artwork {
+        display: none;
+    }
+
+    header {
+        padding-top: 100px;
+    }
+
+    .titleHead h2 {
+        font-size: 3rem;
+    }
+
+    .titleHead p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .mainHead {
+        padding-bottom: 3rem;
+    }
+
+    .lilBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trendArt {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .asideFooter p {
+        font-weight: bold;
+    }
+
+
+    .stickAside {
+        position: unset;
+        width: 80%;
+        margin-inline: auto;
+        padding-bottom: 2rem;
+    }
+
+    .boxxe {
+        width: 80%;
+        padding-left: 3rem;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+/*TABLET */
+
+@media screen and (min-width: 553px) and (max-width: 903px) {
+
+    nav svg {
+        width: 80%;
+    }
+
+    .start {
+        padding: 7px;
+    }
+
+    nav li {
+        font-size: 0.8rem;
+        padding-right: 0.8rem;
+    }
+
+    header {
+        padding-top: 50px;
+    }
+
+    .titleHead h2 {
+        font-size: 7rem;
+    }
+
+    .titleHead p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .mainHead {
+        padding-bottom: 3rem;
+    }
+
+    .lilBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        column-gap: 0.2rem;
+    }
+
+    .trendArt {
+        display: flex;
+        flex-direction: row;
+        width: 48%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .stickAside {
+        width: 100%;
+    }
+
+    .asideFooter {
+        padding: 20px;
+    }
+
+
+
+    .asideFooter {
+        margin-bottom: 5px;
+    }
+
+    .asideFooter p {
+        font-weight: bold;
+    }
+
+    .boxxe {
+        width: 80%;
+        padding-left: 3rem;
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 904px) and (max-width:1241px) {
+    .titleHead h2 {
+        padding-top: 50px;
+        font-size: 7rem;
+    }
 }
