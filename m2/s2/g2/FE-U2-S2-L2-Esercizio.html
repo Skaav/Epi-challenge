@@ -1,57 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
 
+<body>
     <!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
+        
+        In questa pagina aggiungerai destinazioni di posti che sogni di visitare in futuro.
+        
+        Il progetto non richiede alcuna customizzazione di CSS, dovrai crearlo interamente usando le classi di bootstrap, sia per quello che riguarda il layout che lo stile.
+        
+        
+        Testa frequentemente il tuo lavoro nelle 3 principali risoluzioni (mobile, tablet, desktop) usando i developer tools del browser nella sezione emulazione device, per una maggiore precisione.
+        
+        Inizia utilizzando i componenti esistenti di Bootstrap 5 per creare la tua pagina (modificali all'occorrenza utilizzando le utility classes di bootstrap: colori, spazi, margini, dimensioni etc...)
+        Usa container > row > col-* in questo ordine per ottenere un layout responsive perfetto.
+        
+        Esercizi:
+        
+        1) Implementa una navbar con questi elementi di menu:
+        Home
+        Saldi
+        Welcome Summer
+        Last Minute
+        Recensioni
+        Collegherai ogni sezione della pagina agli elementi del menu corrispondenti.
+        2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata. -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="https://imgbb.com/" class="navbar-brand" href="#">
+                <img src="https://i.ibb.co/mqYKmwk/aprire-una-agenzia-viaggi.jpg" alt="aprire-una-agenzia-viaggi"
+                    width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Saldi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Welcame Summer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Last Minute</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recensioni</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno"
+                        aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- 
+        3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
+        una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto
+        Il background della sezione sarà grigio chiaro e con bordi arrotondati e del padding generoso all'interno
+    -->
+    <div class="container bg-body-secondary mt-3 header rounded">
+        <div class="row">
+            <div class="d-flex justify-content-center p-3 align-items-center">
+                <h1 class="d-flex fw-light">Eveline-R-</h1>
+                <p class="d-flex m-0 pb-1">Feel the Freedom</p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="d-flex pt-3 border-top border-dark-subtle m-10 fst-italic fs-6 text">Scopri le destinazioni
+                    più calde
+                    del momento!
+                </p>
+            </div>
+            <div class="d-flex justify-content-center p-3">
+                <button type=" button" class="btn btn-info text-white">Prenota ora</button>
+            </div>
+        </div>
+    </div>
+    <!--
+        
+        4) Implementa la sezione "Saldi". Qui mostrerai 4 destinazioni.
+        
+        In questa sezione dovranno esserci:
+        
+        4 card per destinazioni per linea a schermo grande - desktop (quattro sulla stessa linea)
+        3 card per destinazioni per linea a schermo medio  - tablet  (una dovrà scomparire)
+        2 card per destinazioni per linea a schermo piccolo - mobile (due per linea)
+        
+        le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e testo default -->
+    <div class="container">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-between mt-4">
+                <h2 class="mt-3 mb-3">Saldi</h2>
+                <a class="text-decoration-none text-info" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Nascondi sezione
+                </a>
+            </div>
 
-In questa pagina aggiungerai destinazioni di posti che sogni di visitare in futuro.
-
-Il progetto non richiede alcuna customizzazione di CSS, dovrai crearlo interamente usando le classi di bootstrap, sia per quello che riguarda il layout che lo stile.
-
-
-Testa frequentemente il tuo lavoro nelle 3 principali risoluzioni (mobile, tablet, desktop) usando i developer tools del browser nella sezione emulazione device, per una maggiore precisione.
-
-Inizia utilizzando i componenti esistenti di Bootstrap 5 per creare la tua pagina (modificali all'occorrenza utilizzando le utility classes di bootstrap: colori, spazi, margini, dimensioni etc...)
-Usa container > row > col-* in questo ordine per ottenere un layout responsive perfetto.
-
-Esercizi:
-
-1) Implementa una navbar con questi elementi di menu:
-Home
-Saldi
-Welcome Summer
-Last Minute
-Recensioni
-
-Collegherai ogni sezione della pagina agli elementi del menu corrispondenti. 
-
-2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata.
-
-3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
-una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto
-
-Il background della sezione sarà grigio chiaro e con bordi arrotondati e del padding generoso all'interno
-
-4) Implementa la sezione "Saldi". Qui mostrerai 4 destinazioni.
-
-In questa sezione dovranno esserci:
-
-4 card per destinazioni per linea a schermo grande - desktop (quattro sulla stessa linea)
-3 card per destinazioni per linea a schermo medio  - tablet  (una dovrà scomparire)
-2 card per destinazioni per linea a schermo piccolo - mobile (due per linea)
-
-le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e testo default
-
-5) Implementa la sezione "Welcome Summer". Qui mostrerai 6 destinazioni al tuo utente. (nessun bordo, ma stesso stile dei bottoni precedenti)
-
-In questa sezione dovranno esserci:
-
-6 card per destinazioni per linea a schermo extra large
+            <div class="col-6 col-md-4 col-lg-3 collapse" id="collapseExample">
+                <div class="card px-0 border border-info border-2 mb-2">
+                    <img src="https://placekitten.com/400" class="card-img-top" alt="cat placeholder image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 collapse" id="collapseExample"">
+                    <div class=" card px-0 border border-info border-2 mb-2">
+                <img src="https://placekitten.com/400" class="card-img-top" alt="cat placeholder image" />
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 collapse" id="collapseExample">
+            <div class="card px-0 border border-info border-2 mb-2">
+                <img src="https://placekitten.com/400" class="card-img-top" alt="cat placeholder image" />
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 collapse" id="collapseExample">
+            <div class="card px-0 border border-info border-2">
+                <img src="https://placekitten.com/400" class="card-img-top" alt="cat placeholder image" />
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-info">Prenota</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--    
+        5) Implementa la sezione "Welcome Summer". Qui mostrerai 6 destinazioni al tuo utente. 
+        (nessun bordo, ma stesso stile dei bottoni precedenti)
+        
+        In questa sezione dovranno esserci:
+        
+        6 card per destinazioni per linea a schermo extra large
 3 card per destinazioni per linea a schermo grande (desktop)
 2 card per destinazioni per linea a schermo medio (tablet)
-2 card per destinazioni per linea a schermo piccolo (mobile)
+2 card per destinazioni per linea a schermo piccolo (mobile) -->
 
+    <div class="container">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-between mt-4">
+                <h2 class="mt-3 mb-3">Welcame Summer</h2>
+                <a class="text-decoration-none text-info" data-bs-toggle="collapse" data-bs-target="#collapseExa"
+                    aria-expanded="false" aria-controls="collapseExa">
+                    Nascondi sezione
+                </a>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-4 col-xl-2 collapse" id="collapseExa">
+                <div class="card px-0 border mb-2 shadow-lg bg-body-tertiary rounded">
+                    <img src="https://placekitten.com/400" class="card-img-top" alt="cat placeholder image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 col-xl-2 collapse" id="collapseExa">
+                <div class="card px-0 border mb-2 shadow-lg bg-body-tertiary rounded">
+                    <img src="https://placekitten.com/400" class="card-img-top" alt="cat placeholder image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 col-xl-2 collapse" id="collapseExa">
+                <div class="card px-0 border mb-2 shadow-lg bg-body-tertiary rounded">
+                    <img src="https://placekitten.com/400" class="card-img-top" alt="cat placeholder image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 col-xl-2 collapse" id="collapseExa">
+                <div class=" card px-0 border mb-2 shadow-lg bg-body-tertiary rounded">
+                    <img src="https://placekitten.com/400" class="card-img-top" alt="cat placeholder image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 col-xl-2 collapse" id="collapseExa">
+                <div class="card px-0 border mb-2 shadow-lg bg-body-tertiary rounded">
+                    <img src="https://placekitten.com/400" class="card-img-top" alt="cat placeholder image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 col-xl-2 collapse " id="collapseExa">
+                <div class="card px-0 border mb-2 shadow-lg bg-body-tertiary rounded">
+                    <img src="https://placekitten.com/400" class="card-img-top" alt="cat placeholder image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                        </p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--
 6) Implementa la sezione "Offerta del giorno". Qui avrai:
 
 66% dello spazio dedicato all'immagine del luogo di destinazione
@@ -61,12 +279,21 @@ l'immagine avrà i bordi arrotondati e un'ombra leggera
 per il contenuto: il nome dovrà essere più grande del resto,
 le date dovranno essere formattate con font "monospace",
 il prezzo dovrà essere definito come "lead"
-e il badge sarà scuro
+e il badge sarà scuro -->
+    <div class="container">
+        <div class="row">
+            <h2>Offerta del giorno</h2>
+            <div class="d-flex">
+                <img src="https://placekitten.com/200">
+            </div>
 
+        </div>
+    </div>
+    <!--
 
 7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli.
 
-8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card.
+8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card. (fatto)
 
 9) Crea una sezione "Last Minute", in cui mostrerai 6 immagini delle destinazioni last minute come rettangoli ombreggiati dai bordi arrotondati, senza testo. Rendile responsive come preferisci!
 
@@ -79,7 +306,7 @@ Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recension
 
 EXTRAS
 
-12) Crea un bottone vicino ad ogni sezione per collassarla e riaprirla se premuto.
+12) Crea un bottone vicino ad ogni sezione per collassarla e riaprirla se premuto. (fatto)
 
 13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina e visualizzare il risultato in un alert.
 
@@ -92,8 +319,9 @@ EXTRAS
 17) Crea una funzione che rimuova tutte le "card" dalla pagina
 
 -->
-</head>
-
-<body></body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+</body>
 
 </html>
