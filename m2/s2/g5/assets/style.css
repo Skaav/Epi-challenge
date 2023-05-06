@@ -10,6 +10,99 @@ button {
   color: white;
 }
 
+.carousel-control-next {
+  position: rigth;
+}
+
+.carousel-control-prev {
+  margin-left: -5%;
+}
+
+.carousel-item {
+  transition: 2s;
+}
+
+.movie-row {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.cover {
+  width: 99%;
+  transition: 0.3s;
+  opacity: 1;
+}
+.cover:hover {
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
 body {
   background-color: #141414;
+}
+
+.white {
+  background-color: white;
+}
+
+.paypal {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.navdark {
+  background-color: #141414;
+}
+
+.account-page {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.profile-page {
+  padding: 5% 20%;
+  color: #fff;
+}
+
+.profile-title {
+  font-size: 64px;
+}
+
+input[type=text] {
+  padding: 10px;
+  background-color: #141414;
+  width: 100%;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+  border: 1px solid white;
+  background-color: #141414;
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+input[type=checkbox]:checked {
+  background-color: black;
+}
+
+.sottolineatura {
+  text-decoration: none;
+}
+
+.t1 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: rgb(233, 231, 231);
+  border-radius: 0%;
 }/*# sourceMappingURL=style.css.map */

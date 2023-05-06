@@ -1,3 +1,33 @@
 .mainTitle {
     color: white;
 }
+
+.carousel-control-next {
+    position: rigth;
+}
+
+.carousel-control-prev {
+    margin-left: -5%;
+}
+
+.carousel-item {
+    transition: 2s;
+}
+
+.movie-row {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.cover {
+    width: 99%;
+    transition: 0.3s;
+    opacity: 1;
+
+    &:hover {
+        opacity: 1;
+        transition: 0.3s;
+        cursor: pointer;
+        transform: scale(1.25);
+    }
+}
