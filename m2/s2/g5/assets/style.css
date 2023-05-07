@@ -11,11 +11,13 @@ button {
 }
 
 .carousel-control-next {
-  position: rigth;
+  margin-bottom: 36px;
+  width: 32px;
 }
 
 .carousel-control-prev {
-  margin-left: -5%;
+  width: 32;
+  margin-bottom: 36px;
 }
 
 .carousel-item {
@@ -32,6 +34,7 @@ button {
   transition: 0.3s;
   opacity: 1;
 }
+
 .cover:hover {
   opacity: 1;
   transition: 0.3s;
@@ -105,4 +108,6 @@ input[type=checkbox]:checked {
   font-weight: bold;
   background-color: rgb(233, 231, 231);
   border-radius: 0%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
