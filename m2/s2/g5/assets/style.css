@@ -11,13 +11,13 @@ button {
 }
 
 .carousel-control-next {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   width: 32px;
 }
 
 .carousel-control-prev {
-  width: 32;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
+  width: 32px;
 }
 
 .carousel-item {
