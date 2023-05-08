@@ -6,22 +6,33 @@ class CreateUser {
         this.age = age;
         this.location = location;
     }
-}
-let users = [
-    new CreateUser('Franco', 'Rossi', '20', 'Roma'),
-    new CreateUser('Pippo', 'Bianchi', '35', 'Venezia'),
-    new CreateUser('Francesco', 'Ghiari', '85', 'Palermo'),
-    new CreateUser('Gianni', 'Del Pero', '99', 'Torino'),
-];
-
-let theOldest = users.reduce(function (p, g) {
-    if (p.age < g.age) {
-        return g;
-    } else {
-        return p;
+    static ageDiff(a, b) {
+        if (a.age > b.age) {
+            return a.firstName + " is older than " + b.firstName;
+        } else {
+            return b.firstName + " is older than " + a.firstName;
+        }
     }
-})
-console.log(theOldest.firstName + " è il più vecchio");
+}
+let x = new User("Mario", "Rossi", 38, "Tivoli");
+let y = new User("Carlo", "Verdi", 89, "Ostia");
+
+
+// let users = [
+//     new CreateUser('Franco', 'Rossi', '20', 'Roma'),
+//     new CreateUser('Pippo', 'Bianchi', '35', 'Venezia'),
+//     new CreateUser('Francesco', 'Ghiari', '85', 'Palermo'),
+//     new CreateUser('Gianni', 'Del Pero', '99', 'Torino'),
+// ];
+
+// let theOldest = users.reduce(function (p, g) {
+//     if (p.age < g.age) {
+//         return g;
+//     } else {
+//         return p;
+//     }
+// })
+// console.log(theOldest.firstName + " è il più vecchio");
 
 
 
