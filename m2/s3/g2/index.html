@@ -10,19 +10,19 @@
 
 <body>
     <!-- Contatore1 -->
-    <h1 id="timer">0 secondi</h1>
+    <p>Sono passati: <span id="timer">0 </span>secondi.</p>
 
     <!-- Contatore2 -->
-    <p>Il tempo trascorso è: <span id="counter">0</span> secondi.</p>
+    <p>Sono passati dall'ultimo refresh: <span id="reset">0</span> secondi.</p>
 
     <!-- Input di registrazione nome-->
     <div>
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name" value="">
-        <button id="save-btn">Salva</button>
-        <button id="remove-btn">Rimuovi</button>
+        <button id="saveBtn">Salva</button>
+        <button id="removeBtn">Rimuovi</button>
     </div>
-    <p id="saved-name"></p>
+    <p id="savedName"></p>
     <script src="./index.js"></script>
 </body>
 
