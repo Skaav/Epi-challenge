@@ -27,7 +27,7 @@ setInterval(() => {
     sessionStorage.setItem('count', count);
 }, 1000);
 
-//Contatore2
+//Contatore2 basato sul refresh
 let seconds = 0;
 let reset = document.querySelector('#reset');
 
