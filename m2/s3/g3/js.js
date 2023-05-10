@@ -44,14 +44,17 @@ fetch("https://striveschool-api.herokuapp.com/books")
                     listItem.innerHTML = `
                     <p>${book.title}</p>
                     <p>${book.price}</p>
+                    <button per la distruzione></button>
           `;
                     cart.appendChild(listItem);
+
+                    cartItems.push({ title: book.title, price: book.price });
+
+                    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
                 })
             })
         })
-    })
-    //Terzo then
-    .then((delButton) => {
     })
     // Catch
     .catch((error) => {
