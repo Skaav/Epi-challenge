@@ -10,8 +10,9 @@ if (productID) {
     document.getElementsByTagName('h2')[0].innerText =
         'Backoffice page - Edit product'
     document.getElementById('save-button').innerText = 'Edit Product'
-    document.getElementById('delete-button').innerText = 'Delete Product'
-    let deleteButton = document.getElementById('delete-button')
+    document.getElementById('cambioNome').innerText = 'Delete Product'
+    document.getElementById('nameDelete').innerText = 'Delete'
+    let deleteButton = document.querySelector('.topperia')
     deleteButton.classList.remove('d-none')
     deleteButton.addEventListener('click', () => {
         fetch(AGENDA_URL + productID, {
@@ -22,7 +23,8 @@ if (productID) {
         })
             .then((res) => {
                 if (res.ok) {
-                    alert('Eliminazione completata con successo')
+                    // alert('Eliminazione completata con successo')
+                    // con l'aggiunta del modale, questo Alert non serve più.
                     location.assign('./index.html')
                 } else {
                     throw new Error("Problema nell'eliminazione del prodotto")
@@ -104,8 +106,16 @@ eventForm.addEventListener('submit', function (e) {
         })
 })
 
-const resetBtn = document.getElementById('delete-button');
+const resetBtn = document.querySelector('.topperia');
 
 resetBtn.addEventListener('click', () => {
     eventForm.reset();
 });
+
+
+// const myModal = document.getElementById('delete-modal');
+// const myInput = document.getElementById('myInput')
+
+// myModal.addEventListener('shown.bs.modal', () => {
+//     myInput.focus()
+// })
