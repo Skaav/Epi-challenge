@@ -1,0 +1,30 @@
+npm serve pre creare un package.json che serve per definire le DIPENDENZE.
+npm run  è la coppia di comandi che serve per avviare una coppia di comandi
+npm run test 
+npm i = npm install
+
+touch .gitignore e nel file che si crea 
+node_modules/
+.DS_store
+
+*.avi
+*.pdf
+Ricordarsi che ci vuole un comando per linea
+
+
+
+installazione globale
+npm install -g typescript --save-dev
+
+Per compilare
+
+tsc + file name
+tsc script
+
+js non compila effettivamente ma traduce
+
+per gli output dei file
+node script
+
+
+let none: string = 'Mario';
