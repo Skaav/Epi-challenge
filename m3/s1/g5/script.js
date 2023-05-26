@@ -58,8 +58,8 @@ class Cellulare {
     filtraChiamate(inserisciData) {
         let data = new Date(inserisciData);
         this.registro.forEach(element => {
-            if (new Date(element.data).getTime() == data.getTime()) {
-                console.log(`La chiamata cercata è: ${element.id}, ${element.durata}, ${element.data}`);
+            if (new Date(element.data).getDate() == data.getDate()) {
+                console.log(`La chiamata cercata è: ${element.id} con durata ${element.durata} minuti, in data ${element.data}`);
             }
             else {
                 console.log("Non ci sono chiamate per la data inserita.");
@@ -92,7 +92,7 @@ console.log(smartphone2.numero404());
 console.log(smartphone2.getNumeroChiamate());
 //EXTRA
 smartphone2.getCalls();
-smartphone2.filtraChiamate('March 26 2023');
+smartphone2.filtraChiamate('March 25 2023');
 //
 smartphone2.azzeraChiamate();
 console.log(smartphone2.getNumeroChiamate());
