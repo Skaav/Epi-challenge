@@ -1,0 +1,13 @@
+ng new name
+
+npm i bootstrap
+
+ng g c "name"
+
+<app-"name"></app-"name">
+
+ng s
+
+ng s -o
+
+ng g s post
