@@ -1,10 +1,16 @@
 import { Injectable } from '@angular/core';
+import { Post } from './Models/post';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PostService {
 
-  api: string = "../assets/post.json";
+  apiUrl: string = "assets/db.json";
+
   constructor() { }
+
+  getPost(): Promise<Post[]> {
+    return fetch(this.apiUrl).then(response => response.json());
+  }
 }
