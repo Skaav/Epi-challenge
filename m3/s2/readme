@@ -11,14 +11,13 @@ al file angular.json nella sezione "styles"
 Pulire la app.component.html
 situata in src/app/app.component.html
 
+Creazione componenti
+ng g c "name"/robe
+
 Per lanciare Angular su browser
 ng s -o
 Per aggionare Angular
 ng s
-
-Creazione componenti
-ng g c "name"/robe
-
 
 Angular genera service
 ng g s

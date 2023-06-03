@@ -1,0 +1,24 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "title": "Imparare a nuotare!",
+            "completed": true
+        },
+        {
+            "id": 2,
+            "title": "Fare la lavatrice",
+            "completed": true
+        },
+        {
+            "id": 3,
+            "title": "Lavare i piatti",
+            "completed": true
+        },
+        {
+            "id": 4,
+            "title": "Capire cosa voglio dalla vita",
+            "completed": false
+        }
+    ]
+}
