@@ -1,0 +1,39 @@
+{
+  "pippo": [
+    {
+      "id": 1,
+      "title": "Imparare a guidare",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "title": "Fare la lavatrice",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Prepare il curry per la settimana",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "title": "Fare la lavatrice!",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Imparare a nuotare",
+      "completed": false
+    },
+    {
+      "id": 6,
+      "title": "Lavare i piatti",
+      "completed": false
+    },
+    {
+      "id": 7,
+      "title": "Morire di stenti e dolore",
+      "completed": false
+    }
+  ]
+}

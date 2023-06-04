@@ -1,0 +1,13 @@
+<h2>Hai COMPLETATO queste task!</h2>
+<div>
+    <div *ngFor="let elemento of toDoArr">
+        <div *ngIf="elemento.completed == true">
+            <div>
+                <p>{{elemento.id}}. {{elemento.title}}</p>
+            </div>
+            <div>
+                <button (click)="delete(elemento.id)">Elimina</button>
+            </div>
+        </div>
+    </div>
+</div>
