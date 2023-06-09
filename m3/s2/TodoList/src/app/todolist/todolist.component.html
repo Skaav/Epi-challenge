@@ -1,6 +1,6 @@
 <h2>Questa è la tua lista!</h2>
 <form>
-    <input [(ngModel)]='element.title' [(ngModel)]="buttonText" type="text" name="title"
+    <input [(ngModel)]='element.title' [(ngModel)]="buttonText" (keyup.enter)="create()" type="text" name="title"
         placeholder="Fai le cose animale!">
     <button (click)="create()">Aggiungi</button>
 </form>

@@ -16,13 +16,8 @@
       "completed": true
     },
     {
-      "id": 4,
-      "title": "Fare la lavatrice!",
-      "completed": false
-    },
-    {
       "id": 5,
-      "title": "Imparare a nuotare",
+      "title": "Imparare a nuotare a rana",
       "completed": false
     },
     {
@@ -34,6 +29,11 @@
       "id": 7,
       "title": "Morire di stenti e dolore",
       "completed": false
+    },
+    {
+      "title": "fare la lavatrice",
+      "completed": false,
+      "id": 8
     }
   ]
 }
