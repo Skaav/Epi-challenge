@@ -40,6 +40,11 @@ h4 {
     padding-top: 10px;
 }
 
+#img {
+    height: 55px;
+    width: 170px;
+}
+
 .navigazione {
     background-color: #364757;
     padding-left: 10px;
