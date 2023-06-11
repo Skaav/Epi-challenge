@@ -31,7 +31,7 @@ export class AuthService {
     private http: HttpClient,
     private router: Router
   ) {
-    //this.restoreUser(); serve per restorare dopo
+    this.restoreUser();
   }
 
   signUp(data: Register) {
@@ -47,10 +47,40 @@ export class AuthService {
 
         const expDate = this.jwt
           .getTokenExpirationDate(data.accessToken) as Date;
-        //this.autoLogout(expDate)
+        this.autoLogout(expDate)
       }),
         catchError(this.errors)
       )
+  }
+
+  logout() {
+    this.authSubject.next(null);
+    localStorage.removeItem('user');
+    this.router.navigate(['/auth']);
+    if (this.logoutTimer) {
+      clearTimeout(this.logoutTimer);
+    }
+  }
+
+  autoLogout(expDate: Date) {
+    const expMs = expDate.getTime() - new Date().getTime();
+    this.logoutTimer = setTimeout(() => {
+      this.logout();
+    }, expMs)
+  }
+
+  restoreUser() {
+    const userJson = localStorage.getItem('user');
+    if (!userJson) {
+      return
+    }
+    const user: Access = JSON.parse(userJson)
+    if (this.jwt.isTokenExpired(user.accessToken)) {
+      return;
+    }
+
+    this.authSubject.next(user);
+
   }
 
   errors(err: any) {

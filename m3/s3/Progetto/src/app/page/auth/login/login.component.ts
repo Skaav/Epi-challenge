@@ -24,7 +24,7 @@ export class LoginComponent {
   login() {
     this.authSvc.login(this.user)
       .subscribe(accessData => {
-        this.router.navigate(['/dashboard'])
+        this.router.navigate(['/home'])
       })
   }
 }

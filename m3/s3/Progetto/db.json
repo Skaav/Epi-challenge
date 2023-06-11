@@ -1,3 +1,18 @@
 {
-    "users": []
+  "users": [
+    {
+      "email": "scavinopaolo95@gmail.com",
+      "password": "$2a$10$tJGkVW.uLB61J6CLlQFFf.gOvXJGJsuAgtBVKdVfGlKm.804NJ9I.",
+      "name": "Paolo",
+      "surname": "Scavino",
+      "id": 1
+    },
+    {
+      "email": "scavo95@hotmail.it",
+      "password": "$2a$10$vfEzKfXMl80ZpDTKQtXPH.Tlt8gfcbVuGn6tDI0qU3ExJueX478py",
+      "name": "Marco",
+      "surname": "Scavino",
+      "id": 2
+    }
+  ]
 }
