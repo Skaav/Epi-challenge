@@ -1,4 +1,4 @@
-import { DashboardService } from '../../../Serivices/dashboard.service';
+import { DashboardService } from './../../../Serivices/dashboard.service';
 import { Component, OnInit } from '@angular/core';
 import { IUser } from 'src/app/Models/auth/iuser';
 import { IPost } from 'src/app/Models/dashboard/ipost';
@@ -26,13 +26,13 @@ export class ProfileComponent implements OnInit {
     followerArr: [],
     followArr: [],
   };
-  usersArr: IUser[] = [];
+  usersArr:IUser[] = [];
 
   constructor(
     private authSvc: AuthService,
     private userSvc: UserService,
     private dashSvc: DashboardService
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.userSvc.giveCurrentUser();

@@ -1,5 +1,5 @@
 import { IPost } from 'src/app/Models/dashboard/ipost';
-import { DashboardService } from '../../../Serivices/dashboard.service';
+import { DashboardService } from './../../../Serivices/dashboard.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { IUser } from 'src/app/Models/auth/iuser';
@@ -37,7 +37,7 @@ export class CreateComponent {
     private dashSvc: DashboardService,
     private router: Router,
     private userSvc: UserService
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.userSvc.giveCurrentUser();
